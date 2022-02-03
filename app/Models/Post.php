@@ -12,11 +12,11 @@ class Post extends Model
 
     public function category()
     {
-        $this->belongsTo(Category::class);
+        return $this->belongsTo(Category::class);
     }
 
     public function author()
     {
-        $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

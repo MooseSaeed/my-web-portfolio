@@ -2,18 +2,31 @@
 
     @include('__header')
 
-    <x-featuredCard />
+    @if ($posts->count())
+
+        <x-featuredCard :post="$posts[0]" />
+
+        @if ($posts->count() > 1)
+
+            <div class="lg:grid lg:grid-cols-2">
+
+                <x-postCard :post="$posts[1]" class="" />
+                <x-postCard :post="$posts[2]" class="" />
+
+            </div>
+
+            <div class="lg:grid lg:grid-cols-3">
+                @foreach ($posts->skip(3) as $post)
+                    <x-postCard :post="$post" class="" />
+                @endforeach
+            </div>
+
+        @endif
+
+    @else
+        <p>No posts yet, please check back later.</p>
+    @endif
 
 
-    <div class="lg:grid lg:grid-cols-2">
-        <x-postCard />
-        <x-postCard />
-    </div>
-
-    <div class="lg:grid lg:grid-cols-3">
-        <x-postCard />
-        <x-postCard />
-        <x-postCard />
-    </div>
 
 </x-bloglayout>

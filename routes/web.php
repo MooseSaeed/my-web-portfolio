@@ -17,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [Postcontroller::class, 'index']);
 
-route::get('post', function (Post $post) {
-    return view('post');
+route::get('posts/{post:slug}', function (Post $post) {
+    return view('post', [
+        'post' => $post
+    ]);
 });
 
 Route::get('/dashboard', function () {
