@@ -10,14 +10,14 @@
 
             <div class="lg:grid lg:grid-cols-2">
 
-                <x-postCard :post="$posts[1]" class="" />
-                <x-postCard :post="$posts[2]" class="" />
+                <x-postCard :post="$posts[1]" />
+                <x-postCard :post="$posts[2]" />
 
             </div>
 
             <div class="lg:grid lg:grid-cols-3">
                 @foreach ($posts->skip(3) as $post)
-                    <x-postCard :post="$post" class="" />
+                    <x-postCard :post="$post" />
                 @endforeach
             </div>
 
