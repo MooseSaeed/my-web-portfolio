@@ -17,8 +17,10 @@
 
 
 <body style="font-family: Open Sans, sans-serif">
+
     <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
         <nav class="grid grid-rows-2 py-3 px-10 bg-white gap-4 justify-center items-center md:flex md:justify-between md:items-center">
+
             <div class="justify-self-center">
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170" height="70" viewBox="0 0 1150 390">
@@ -28,7 +30,7 @@
             </div>
 
             <div class="flex flex-col gap-2 md:block items-center justify-center">
-                <a href="/" class="text-xs font-bold uppercase">Home Page</a>
+                <a href="/" class="text-xs font-bold uppercase">Dashboard Page</a>
 
                 <button href="#" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                     Subscribe for Updates
@@ -395,8 +397,8 @@
             <footer class="flex flex-col justify-center items-center bg-blue-50 text-center py-16 px-10 rounded-xl">
                 <img src="images/My Logo Newsletter.png" width="220px" class="mb-3" alt="" />
 
-                <h5 class="text-3xl">Stay in touch with the latest posts</h5>
-                <p class="text-sm mt-3">Promise to keep the inbox clean. No bugs.</p>
+                <h5 class="text-3xl">Subscribe to my newsletter and stay up to date.</h5>
+                <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>
 
                 <div class="mt-10">
                     <div class="relative inline-block mx-auto lg:bg-blue-100 rounded-full">
