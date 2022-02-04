@@ -12,7 +12,7 @@
     <meta property="og:image" content="http://" />
     <meta property="og:url" content="https://" />
     <title>Hands On Tech Blog</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
     <link rel="stylesheet" href="override.css" />
 </head>
 
