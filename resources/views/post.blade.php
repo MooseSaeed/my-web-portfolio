@@ -19,14 +19,17 @@
                 <div class="col-span-8">
 
                     <div class="hidden lg:flex justify-between mb-6">
-                        <a href="/" class="relative inline-flex items-center text-lg text-transparent bg-clip-text demogard transition duration-300 font-semibold 
+                        <a href="/"
+                            class="relative inline-flex items-center text-lg text-transparent bg-clip-text demogard transition duration-300 font-semibold 
                 bg-gradient-to-r from-purple-600 to-blue-500
                 hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800">
 
                             < Back to Posts </a>
 
                                 <div class="space-x-2">
-                                    <a href="#" class="px-3 py-1 border border-violet-400 rounded-full text-violet-400 text-xs uppercase font-semibold" style="font-size: 10px">{{ $post->category->name }}</a>
+                                    <a href="/categories/{{ $post->category->slug }}"
+                                        class="px-3 py-1 border border-violet-400 rounded-full text-violet-400 text-xs uppercase font-semibold"
+                                        style="font-size: 10px">{{ $post->category->name }}</a>
                                 </div>
                     </div>
 

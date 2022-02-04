@@ -7,7 +7,7 @@
 
     <h2 class="inline-flex mt-2 items-center">
         By Mostafa Said
-        <img src="images/wavinghand.png" width="35px" alt="Waving Hand" />
+        <img src="/images/wavinghand.png" width="35px" alt="Waving Hand" />
     </h2>
 
     <p class="text-sm mt-5">
