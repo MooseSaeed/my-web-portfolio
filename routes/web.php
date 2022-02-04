@@ -21,14 +21,14 @@ route::get('posts/{post:slug}', [Postcontroller::class, 'show']);
 
 
 route::get('categories/{category:slug}', function (Category $category) {
-    return view('index', [
+    return view('posts.index', [
         'posts' => $category->posts,
         'categories' => Category::all()
     ]);
 });
 
 route::get('authors/{author:username}', function (User $author) {
-    return view('index', [
+    return view('posts.index', [
         'posts' => $author->posts,
         'authors' => User::all(),
         'categories' => Category::all(),

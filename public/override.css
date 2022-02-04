@@ -2,6 +2,19 @@ input:focus {
     box-shadow: none !important;
 }
 
+img:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+svg:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+a:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
 select {
     background-image: none !important;
     box-shadow: none !important;
