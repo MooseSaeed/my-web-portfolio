@@ -9,7 +9,7 @@
         <div class="flex-1 flex flex-col justify-between">
             <header class="mt-8 lg:mt-0">
                 <div class="space-x-2">
-                    <a href="#" class="px-3 py-1 border border-violet-400 rounded-full text-violet-400 text-xs uppercase font-semibold" style="font-size: 10px">{{ $post->category->name }}</a>
+                    <a href="#" class="px-3 py-1 border border-violet-500 rounded-full text-violet-500 text-xs uppercase font-semibold" style="font-size: 10px">{{ $post->category->name }}</a>
                 </div>
 
                 <div class="mt-4">

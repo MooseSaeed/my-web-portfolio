@@ -19,7 +19,7 @@
 
 <body style="font-family: Open Sans, sans-serif" class="scroll-smooth">
 
-    <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+    <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-700">
         <nav class="grid grid-rows-2 py-3 px-10 bg-white gap-4 justify-center items-center md:flex md:justify-between md:items-center">
 
             <div class="justify-self-center">
@@ -34,7 +34,7 @@
                 <a href="/" class="text-xs font-bold uppercase">Dashboard Page</a>
 
                 <a href="#newsletter">
-                    <button href="#newsletter" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
+                    <button href="#newsletter" class="transition-colors duration-300 bg-purple-500 hover:bg-blue-600 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                         Subscribe for Updates
                     </button>
                 </a>
