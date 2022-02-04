@@ -13,6 +13,7 @@
     <meta property="og:url" content="https://" />
     <title>Hands On Tech Blog</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="override.css" />
 </head>
 
 

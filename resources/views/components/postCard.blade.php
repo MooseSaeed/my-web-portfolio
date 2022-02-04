@@ -26,7 +26,7 @@ hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 ro
         <p>{{ $post->excerpt }}</p>
     </div>
 
-    <footer class="flex flex-col sm:flex-row justify-between items-center mt-8">
+    <footer class="flex flex-col sm:flex-row lg:flex-col xl:flex-row justify-between items-center mt-8">
         <div class="flex items-center text-sm">
             <img src="images/My Logo Avatar.png" alt="Logo avatar" />
             <div class="ml-3">

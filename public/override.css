@@ -1,0 +1,8 @@
+input:focus {
+    box-shadow: none !important;
+}
+
+select {
+    background-image: none !important;
+    box-shadow: none !important;
+}
