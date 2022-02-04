@@ -1,6 +1,6 @@
 <x-bloglayout>
 
-    @include('__header')
+    @include('posts.__header')
 
     @if ($posts->count())
 
