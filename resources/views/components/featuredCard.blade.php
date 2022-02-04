@@ -3,7 +3,7 @@
 <article class="transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
     <div class="py-6 px-5 lg:flex">
         <div class="flex-1 lg:mr-8">
-            <img src="images/pic sample.jpg" alt="Blog Post illustration" class="rounded-xl object-cover" />
+            <img src="/images/pic sample.jpg" alt="Blog Post illustration" class="rounded-xl object-cover" />
         </div>
 
         <div class="flex-1 flex flex-col justify-between">
@@ -33,7 +33,7 @@
 
             <footer class="flex flex-col sm:flex-row justify-between items-center mt-8">
                 <div class="flex items-center text-sm">
-                    <img src="images/My Logo Avatar.png" alt="Logo avatar" />
+                    <img src="/images/My Logo Avatar.png" alt="Logo avatar" />
                     <div class="ml-3">
                         <h5 class="font-bold">{{ $post->author->name }}</h5>
                     </div>
@@ -43,7 +43,7 @@
                     <a href="/posts/{{ $post->slug }}" class="demogard transition duration-300 font-semibold 
                 bg-gradient-to-r from-purple-600 to-blue-500
                 hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
-                px-2 py-1 text-white rounded-full py-2 px-8 text-xs">Read
+                 text-white rounded-full py-2 px-8 text-xs">Read
                         More</a>
                 </div>
             </footer>
