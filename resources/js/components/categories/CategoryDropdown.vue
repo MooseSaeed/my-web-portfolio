@@ -3,6 +3,8 @@
         <button
             @click="showCategories"
             class="flex w-full py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
+            @focusout="handleFocusOut"
+            tabindex="0"
         >
             Categories
             <svg
@@ -59,8 +61,11 @@ export default {
                 this.categories = response.data.categories;
             });
         },
+        handleFocusOut() {
+            this.categoryToggle = false;
+        },
     },
-    created() {
+    mounted() {
         this.getCategories();
     },
 };

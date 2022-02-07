@@ -22893,6 +22893,9 @@ __webpack_require__.r(__webpack_exports__);
       axios.get("/list").then(function (response) {
         _this.categories = response.data.categories;
       });
+    },
+    handleFocusOut: function handleFocusOut() {
+      this.categoryToggle = false;
     }
   },
   created: function created() {
@@ -22955,8 +22958,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function () {
       return $options.showCategories && $options.showCategories.apply($options, arguments);
     }),
-    "class": "flex w-full py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
-  }, _hoisted_4), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
+    "class": "flex w-full py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32",
+    onFocusout: _cache[1] || (_cache[1] = function () {
+      return $options.handleFocusOut && $options.handleFocusOut.apply($options, arguments);
+    }),
+    tabindex: "0"
+  }, _hoisted_4, 32
+  /* HYDRATE_EVENTS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_router_link, {
       href: "#",
       key: category.id,
