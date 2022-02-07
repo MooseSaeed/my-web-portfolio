@@ -14,6 +14,7 @@
     <title>Hands On Tech Blog</title>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" />
     <link rel="stylesheet" href="/override.css" />
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
 
@@ -44,8 +45,10 @@
 
     <section class="px-6 pb-6 pt-2">
 
-        <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
+        <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6" id="app">
+
             {{ $slot }}
+
         </main>
         <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
             <footer class="flex flex-col justify-center items-center bg-blue-50 text-center py-16 px-10 rounded-xl">

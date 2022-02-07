@@ -19,15 +19,7 @@
         <!--  Category -->
         <div class="override relative flex lg:inline-flex items-center bg-blue-100 rounded-xl">
 
-            <div>
-                <button>Categories</button>
-
-                <a href="#">One</a>
-                <a href="#">Two</a>
-                <a href="#">Three</a>
-
-            </div>
-
+            <router-view />
 
             {{-- <select
                 class="border-none outline-hidden flex-1 appearance-none bg-transparent py-2 pl-3 pr-9 text-sm font-semibold">
@@ -49,8 +41,7 @@
         <!-- Search -->
         <div class="override flex lg:inline-flex items-center bg-blue-50 rounded-xl px-3 py-2">
             <form method="GET" action="#">
-                <input type="text" name="search" placeholder="Looking for something?"
-                    class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
+                <input type="text" name="search" placeholder="Looking for something?" class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
             </form>
         </div>
     </div>
