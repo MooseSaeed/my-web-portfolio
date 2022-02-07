@@ -27,12 +27,18 @@
             </svg>
         </button>
         <div
+            v-for="category in categories"
+            :key="category.id"
             v-show="categoryToggle"
-            class="absolute z-50 mt-2 w-full overflow-scroll rounded-xl bg-blue-100 py-2"
+            class="absolute z-50 mt-2 w-full rounded-xl bg-blue-100 py-2"
         >
-            <a href="#" class="block px-3 text-left text-sm">One</a>
-            <a href="#" class="block px-3 text-left text-sm">Two</a>
-            <a href="#" class="block px-3 text-left text-sm">Three</a>
+            <!-- <router-link class="block px-3 text-left text-sm" to="/">
+                {{ Home }}
+            </router-link> -->
+
+            <a href="#" class="block px-3 text-left text-sm">{{
+                category.name
+            }}</a>
         </div>
     </div>
 </template>
@@ -42,12 +48,21 @@ export default {
     data() {
         return {
             categoryToggle: false,
+            categories: [],
         };
     },
     methods: {
         showCategories() {
             this.categoryToggle = !this.categoryToggle;
         },
+        getCategories() {
+            axios.get("/list").then((response) => {
+                this.categories = response.data.categories;
+            });
+        },
+    },
+    created() {
+        this.getCategories();
     },
 };
 </script>
