@@ -17,7 +17,7 @@
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">
         <!--  Category -->
-        <div class="override relative flex lg:inline-flex items-center bg-blue-100 rounded-xl">
+        <div class="override lg:inline-flex items-center bg-blue-100 rounded-xl">
 
             <router-view />
 
@@ -41,7 +41,8 @@
         <!-- Search -->
         <div class="override flex lg:inline-flex items-center bg-blue-50 rounded-xl px-3 py-2">
             <form method="GET" action="#">
-                <input type="text" name="search" placeholder="Looking for something?" class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
+                <input type="text" name="search" placeholder="Looking for something?"
+                    class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
             </form>
         </div>
     </div>
