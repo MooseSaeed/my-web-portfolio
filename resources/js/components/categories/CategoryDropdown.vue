@@ -27,18 +27,17 @@
             </svg>
         </button>
         <div
-            v-for="category in categories"
-            :key="category.id"
             v-show="categoryToggle"
-            class="absolute z-50 mt-2 w-full rounded-xl bg-blue-100 py-2"
+            class="absolute z-50 mt-1 w-full rounded-xl bg-blue-100 py-2"
         >
-            <!-- <router-link class="block px-3 text-left text-sm" to="/">
-                {{ Home }}
-            </router-link> -->
-
-            <a href="#" class="block px-3 text-left text-sm">{{
-                category.name
-            }}</a>
+            <router-link
+                href="#"
+                v-for="category in categories"
+                :key="category.id"
+                class="block py-1 px-3 text-left text-sm"
+                to="/"
+                >{{ category.name }}</router-link
+            >
         </div>
     </div>
 </template>

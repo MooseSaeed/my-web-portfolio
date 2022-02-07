@@ -11,7 +11,7 @@ class CategoryController extends Controller
     public function list(Category $category)
     {
         return response()->json([
-            'categories' => \App\Models\Category::latest()->get()
+            'categories' => \App\Models\Category::all()
         ], Response::HTTP_OK);
     }
 }

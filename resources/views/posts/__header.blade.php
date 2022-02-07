@@ -17,7 +17,7 @@
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">
         <!--  Category -->
-        <div class="override lg:inline-flex items-center bg-blue-100 rounded-xl">
+        <div class="override relative lg:inline-flex items-center bg-blue-100 rounded-xl">
 
             <router-view />
 
