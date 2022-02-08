@@ -19,7 +19,10 @@
         <!--  Category -->
         <div class="override relative lg:inline-flex items-center bg-blue-100 rounded-xl">
 
-            <router-view />
+            <router-view categoryroute="{{ route('categoryroute') }}" />
+
+            {{-- <router-view :route="'{{ route('categoryroute', ["$categories->slug"]) }}'" /> --}}
+
 
             {{-- <select
                 class="border-none outline-hidden flex-1 appearance-none bg-transparent py-2 pl-3 pr-9 text-sm font-semibold">

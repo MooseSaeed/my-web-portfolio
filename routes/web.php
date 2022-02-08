@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Postcontroller;
 use App\Models\Category;
+use App\Models\Post;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -23,10 +24,16 @@ route::get('posts/{post:slug}', [Postcontroller::class, 'show']);
 
 route::get('list', [CategoryController::class, 'list']);
 
-/*     return view('posts.index', [
+route::get('/categories/{category:slug}', function (Category $category) {
+    return view('posts.index', [
         'posts' => $category->posts,
         'categories' => Category::all()
-    ]); */
+    ]);
+});
+
+route::get('categories/', function () {
+    return redirect('/');
+})->name('categoryroute');
 
 route::get('authors/{author:username}', function (User $author) {
     return view('posts.index', [
@@ -34,7 +41,7 @@ route::get('authors/{author:username}', function (User $author) {
         'authors' => User::all(),
         'categories' => Category::all(),
     ]);
-});
+})->name('authorroute');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

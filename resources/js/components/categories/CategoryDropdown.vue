@@ -30,13 +30,12 @@
             v-show="categoryToggle"
             class="absolute z-50 mt-1 w-full rounded-xl bg-blue-100 py-2"
         >
-            <router-link
-                href="#"
+            <a
+                :href="this.fullRoute + category.slug"
                 v-for="category in categories"
                 :key="category.id"
                 class="block py-1 px-3 text-left text-sm"
-                to="/"
-                >{{ category.name }}</router-link
+                >{{ category.name }}</a
             >
         </div>
     </div>
@@ -45,6 +44,9 @@
 <script>
 import vClickOutside from "click-outside-vue3";
 export default {
+    props: {
+        categoryroute: String,
+    },
     data() {
         return {
             categoryToggle: false,
@@ -53,6 +55,11 @@ export default {
     },
     directives: {
         clickOutside: vClickOutside.directive,
+    },
+    computed: {
+        fullRoute() {
+            return this.categoryroute + "/";
+        },
     },
     methods: {
         showCategories() {
