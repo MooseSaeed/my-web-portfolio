@@ -21,8 +21,6 @@
 
             <router-view />
 
-            {{-- <router-view :route="'{{ route('categoryroute', ["$categories->slug"]) }}'" /> --}}
-
         </div>
 
         <!-- Search -->
