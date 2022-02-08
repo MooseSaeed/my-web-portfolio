@@ -48,7 +48,7 @@ export default {
         return {
             categoryToggle: false,
             categories: [],
-            categoryRoute: "/categories/",
+            categoryRoute: "/?category=",
         };
     },
     directives: {

@@ -22884,7 +22884,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       categoryToggle: false,
       categories: [],
-      categoryRoute: "/categories/"
+      categoryRoute: "/?category="
     };
   },
   directives: {
@@ -22968,7 +22968,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function () {
       return $options.showCategories && $options.showCategories.apply($options, arguments);
     }),
-    "class": "flex w-full py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
+    "class": "flex max-h-52 w-full overflow-auto py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
   }, _hoisted_4), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
       href: _this.categoryRoute + category.slug,
