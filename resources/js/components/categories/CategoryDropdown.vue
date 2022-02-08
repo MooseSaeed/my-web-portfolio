@@ -31,7 +31,7 @@
             class="absolute z-50 mt-1 w-full rounded-xl bg-blue-100 py-2"
         >
             <a
-                :href="this.fullRoute + category.slug"
+                :href="this.categoryRoute + category.slug"
                 v-for="category in categories"
                 :key="category.id"
                 class="block py-1 px-3 text-left text-sm"
@@ -44,22 +44,15 @@
 <script>
 import vClickOutside from "click-outside-vue3";
 export default {
-    props: {
-        categoryroute: String,
-    },
     data() {
         return {
             categoryToggle: false,
             categories: [],
+            categoryRoute: "/categories/",
         };
     },
     directives: {
         clickOutside: vClickOutside.directive,
-    },
-    computed: {
-        fullRoute() {
-            return this.categoryroute + "/";
-        },
     },
     methods: {
         showCategories() {

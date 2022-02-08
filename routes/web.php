@@ -31,10 +31,6 @@ route::get('/categories/{category:slug}', function (Category $category) {
     ]);
 });
 
-route::get('categories/', function () {
-    return redirect('/');
-})->name('categoryroute');
-
 route::get('authors/{author:username}', function (User $author) {
     return view('posts.index', [
         'posts' => $author->posts,

@@ -22880,22 +22880,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var click_outside_vue3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(click_outside_vue3__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: {
-    categoryroute: String
-  },
   data: function data() {
     return {
       categoryToggle: false,
-      categories: []
+      categories: [],
+      categoryRoute: "/categories/"
     };
   },
   directives: {
     clickOutside: (click_outside_vue3__WEBPACK_IMPORTED_MODULE_0___default().directive)
-  },
-  computed: {
-    fullRoute: function fullRoute() {
-      return this.categoryroute + "/";
-    }
   },
   methods: {
     showCategories: function showCategories() {
@@ -22978,7 +22971,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "flex w-full py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
   }, _hoisted_4), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
-      href: _this.fullRoute + category.slug,
+      href: _this.categoryRoute + category.slug,
       key: category.id,
       "class": "block py-1 px-3 text-left text-sm"
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(category.name), 9
