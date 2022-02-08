@@ -2,7 +2,7 @@
     <div class="relative" v-click-outside="onClickOutside">
         <button
             @click="showCategories"
-            class="flex w-full py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
+            class="flex max-h-52 w-full overflow-auto py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
         >
             Categories
             <svg
