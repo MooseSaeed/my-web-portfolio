@@ -23074,6 +23074,10 @@ var routes = [{
   path: "/",
   name: "home",
   component: _components_categories_CategoryDropdown__WEBPACK_IMPORTED_MODULE_0__["default"]
+}, {
+  path: "/categories/:slug",
+  name: "categories",
+  component: _components_categories_CategoryDropdown__WEBPACK_IMPORTED_MODULE_0__["default"]
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
   history: (0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createWebHistory)(),

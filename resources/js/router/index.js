@@ -8,6 +8,11 @@ const routes = [
         name: "home",
         component: CategoryDropdown,
     },
+    {
+        path: "/categories/:slug",
+        name: "categories",
+        component: CategoryDropdown,
+    },
 ];
 
 export default createRouter({
