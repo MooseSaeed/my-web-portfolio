@@ -1,10 +1,8 @@
 <template>
-    <div class="relative">
+    <div class="relative" v-click-outside="onClickOutside">
         <button
             @click="showCategories"
             class="flex w-full py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
-            @focusout="handleFocusOut"
-            tabindex="0"
         >
             Categories
             <svg
@@ -45,12 +43,16 @@
 </template>
 
 <script>
+import vClickOutside from "click-outside-vue3";
 export default {
     data() {
         return {
             categoryToggle: false,
             categories: [],
         };
+    },
+    directives: {
+        clickOutside: vClickOutside.directive,
     },
     methods: {
         showCategories() {
@@ -61,7 +63,7 @@ export default {
                 this.categories = response.data.categories;
             });
         },
-        handleFocusOut() {
+        onClickOutside() {
             this.categoryToggle = false;
         },
     },

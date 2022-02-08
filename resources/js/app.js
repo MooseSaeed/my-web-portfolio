@@ -9,11 +9,12 @@ Alpine.start();
 import { createApp } from "vue";
 import router from "./router";
 import CategoryDropdown from "./components/categories/CategoryDropdown";
+import vClickOutside from "click-outside-vue3";
 
 createApp({
     components: {
         CategoryDropdown,
     },
 })
-    .use(router)
+    .use(router, vClickOutside)
     .mount("#app");
