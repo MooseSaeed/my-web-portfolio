@@ -13,6 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        \App\Models\User::factory()->create([
+            'name' => 'Mostafa Said',
+            'id' => '1'
+        ]);
+
         \App\Models\Category::factory()->create([
             'name' => 'Frontend',
             'id' => '1'
@@ -29,13 +34,16 @@ class DatabaseSeeder extends Seeder
         ]);
 
         \App\Models\Post::factory(4)->create([
-            'category_id' => 1
+            'category_id' => 1,
+            'user_id' => 1,
         ]);
         \App\Models\Post::factory(4)->create([
-            'category_id' => 2
+            'category_id' => 2,
+            'user_id' => 1,
         ]);
         \App\Models\Post::factory(4)->create([
-            'category_id' => 3
+            'category_id' => 3,
+            'user_id' => 1,
         ]);
     }
 }
