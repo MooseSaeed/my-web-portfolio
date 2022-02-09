@@ -5,8 +5,14 @@
             class="flex max-h-52 w-full overflow-auto py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
         >
             Categories
+
             <svg
-                class="pointer-events-none absolute -rotate-90 transform"
+                class="absolute"
+                :class="
+                    categoryToggle
+                        ? '-rotate-90 transform transition duration-500 ease-in-out'
+                        : 'rotate-90 transform transition duration-500 ease-in-out'
+                "
                 style="right: 12px"
                 width="22"
                 height="22"
@@ -29,6 +35,7 @@
         <div
             v-show="categoryToggle"
             class="absolute z-50 mt-1 w-full rounded-xl bg-blue-100 py-2"
+            :class="categoryToggle ? '' : ''"
         >
             <a
                 :href="this.categoryRoute + category.slug"
