@@ -8,6 +8,8 @@ module.exports = {
         "./resources/views/components/*.blade.php",
         "./resources/views/auth/*.blade.php",
         "./resources/views/layouts/*.blade.php",
+        "./resources/js/components/categories/*.vue",
+        "./resources/js/components/**/*.vue",
     ],
 
     theme: {
