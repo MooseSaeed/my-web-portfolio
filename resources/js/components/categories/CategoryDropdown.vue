@@ -43,13 +43,13 @@
         >
             <div
                 v-show="categoryToggle"
-                class="absolute left-0 right-0 z-50 mt-1 w-full rounded-xl bg-blue-100 py-2"
+                class="absolute left-0 right-0 z-50 mt-2 w-full rounded-lg bg-blue-100 bg-gradient-to-r from-purple-600 to-blue-500 py-2"
             >
                 <a
                     :href="this.categoryRoute + category.slug"
                     v-for="category in categories"
                     :key="category.id"
-                    class="block py-1 px-3 text-left text-sm transition-colors duration-300 hover:bg-gray-200"
+                    class="demogard categoryItems"
                     >{{ category.name }}</a
                 >
             </div>

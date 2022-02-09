@@ -24940,7 +24940,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 
 var _hoisted_4 = [_hoisted_3];
 var _hoisted_5 = {
-  "class": "absolute left-0 right-0 z-50 mt-1 w-full rounded-xl bg-blue-100 py-2"
+  "class": "absolute left-0 right-0 z-50 mt-2 w-full rounded-lg bg-blue-100 bg-gradient-to-r from-purple-600 to-blue-500 py-2"
 };
 var _hoisted_6 = ["href"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -24977,7 +24977,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
           href: _this.categoryRoute + category.slug,
           key: category.id,
-          "class": "block py-1 px-3 text-left text-sm transition-colors duration-300 hover:bg-gray-200"
+          "class": "demogard categoryItems"
         }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(category.name), 9
         /* TEXT, PROPS */
         , _hoisted_6);

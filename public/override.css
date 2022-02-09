@@ -29,3 +29,6 @@ select {
 .demogard:hover {
     background-position: 126.6px !important;
 }
+.demogard:focus {
+    background-position: 126.6px !important;
+}
