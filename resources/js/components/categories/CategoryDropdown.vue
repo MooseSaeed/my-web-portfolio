@@ -33,7 +33,8 @@
             </svg>
         </button>
         <transition
-            enter-active-class="transform transition duration-500 ease-custom"
+            :duration="1000"
+            enter-active-class="transform transition duration-300 ease-custom"
             enter-class="-translate-y-1/2 scale-y-0 opacity-0"
             enter-to-class="translate-y-0 scale-y-100 opacity-100"
             leave-active-class="transform transition duration-300 ease-custom"
