@@ -31,7 +31,7 @@
             class="absolute z-50 mt-1 w-full rounded-xl bg-blue-100 py-2"
         >
             <a
-                :href="this.categoryRoute + category.slug"
+                :href="categoryRoute.value + category.slug"
                 v-for="category in categories"
                 :key="category.id"
                 class="block py-1 px-3 text-left text-sm"
@@ -43,32 +43,46 @@
 
 <script>
 import vClickOutside from "click-outside-vue3";
+import { ref, onMounted } from "vue";
 export default {
-    data() {
-        return {
-            categoryToggle: false,
-            categories: [],
-            categoryRoute: "/?category=",
-        };
-    },
+    name: "home",
     directives: {
         clickOutside: vClickOutside.directive,
     },
-    methods: {
-        showCategories() {
-            this.categoryToggle = !this.categoryToggle;
-        },
-        getCategories() {
+    setup() {
+        const categoryToggle = ref(false);
+
+        const showCategories = () => {
+            categoryToggle.value = !categoryToggle.value;
+        };
+
+        const onClickOutside = (event) => {
+            categoryToggle.value = false;
+        };
+
+        const categories = ref([]);
+
+        const getCategories = () => {
             axios.get("/list").then((response) => {
-                this.categories = response.data.categories;
+                categories.value = response.data.categories;
             });
-        },
-        onClickOutside() {
-            this.categoryToggle = false;
-        },
-    },
-    mounted() {
-        this.getCategories();
+        };
+
+        onMounted(() => {
+            getCategories();
+        });
+
+        const categoryRoute = ref("/?category=");
+
+        return {
+            categoryToggle,
+            showCategories,
+            onClickOutside,
+            categories,
+            getCategories,
+            onMounted,
+            categoryRoute,
+        };
     },
 };
 </script>

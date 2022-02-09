@@ -22878,35 +22878,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var click_outside_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! click-outside-vue3 */ "./node_modules/click-outside-vue3/dist/v-click-outside.umd.js");
 /* harmony import */ var click_outside_vue3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(click_outside_vue3__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      categoryToggle: false,
-      categories: [],
-      categoryRoute: "/?category="
-    };
-  },
+  name: "home",
   directives: {
     clickOutside: (click_outside_vue3__WEBPACK_IMPORTED_MODULE_0___default().directive)
   },
-  methods: {
-    showCategories: function showCategories() {
-      this.categoryToggle = !this.categoryToggle;
-    },
-    getCategories: function getCategories() {
-      var _this = this;
+  setup: function setup() {
+    var categoryToggle = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(false);
 
+    var showCategories = function showCategories() {
+      categoryToggle.value = !categoryToggle.value;
+    };
+
+    var onClickOutside = function onClickOutside(event) {
+      categoryToggle.value = false;
+    };
+
+    var categories = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)([]);
+
+    var getCategories = function getCategories() {
       axios.get("/list").then(function (response) {
-        _this.categories = response.data.categories;
+        categories.value = response.data.categories;
       });
-    },
-    onClickOutside: function onClickOutside() {
-      this.categoryToggle = false;
-    }
-  },
-  mounted: function mounted() {
-    this.getCategories();
+    };
+
+    (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(function () {
+      getCategories();
+    });
+    var categoryRoute = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)("/?category=");
+    return {
+      categoryToggle: categoryToggle,
+      showCategories: showCategories,
+      onClickOutside: onClickOutside,
+      categories: categories,
+      getCategories: getCategories,
+      onMounted: vue__WEBPACK_IMPORTED_MODULE_1__.onMounted,
+      categoryRoute: categoryRoute
+    };
   }
 });
 
@@ -22960,18 +22971,16 @@ var _hoisted_5 = {
 };
 var _hoisted_6 = ["href"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _this = this;
-
   var _directive_click_outside = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDirective)("click-outside");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)(((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[0] || (_cache[0] = function () {
-      return $options.showCategories && $options.showCategories.apply($options, arguments);
+      return $setup.showCategories && $setup.showCategories.apply($setup, arguments);
     }),
     "class": "flex max-h-52 w-full overflow-auto py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
-  }, _hoisted_4), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
+  }, _hoisted_4), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
-      href: _this.categoryRoute + category.slug,
+      href: $setup.categoryRoute.value + category.slug,
       key: category.id,
       "class": "block py-1 px-3 text-left text-sm"
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(category.name), 9
@@ -22981,7 +22990,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* KEYED_FRAGMENT */
   ))], 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.categoryToggle]])])), [[_directive_click_outside, $options.onClickOutside]]);
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.categoryToggle]])])), [[_directive_click_outside, $setup.onClickOutside]]);
 }
 
 /***/ }),
