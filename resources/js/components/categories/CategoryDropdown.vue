@@ -104,6 +104,6 @@ export default {
 
 <style>
 .ease-custom {
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+    transition-timing-function: cubic-bezier(0.61, -0.53, 0.43, 1.43);
 }
 </style>
