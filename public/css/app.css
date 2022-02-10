@@ -824,10 +824,6 @@ select{
   width: 1.5rem;
 }
 
-.w-96{
-  width: 24rem;
-}
-
 .max-w-xl{
   max-width: 36rem;
 }
@@ -1556,10 +1552,6 @@ select{
 
 .opacity-100{
   opacity: 1;
-}
-
-.opacity-90{
-  opacity: 0.9;
 }
 
 .shadow-sm{

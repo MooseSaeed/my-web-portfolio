@@ -1,17 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import CategoryDropdown from "../components/categories/CategoryDropdown";
+import Dropdown from "../components/categories/Dropdown";
 
 const routes = [
     {
         path: "/",
         name: "home",
-        component: CategoryDropdown,
+        component: Dropdown,
     },
     {
         path: "/categories/:slug",
         name: "categories",
-        component: CategoryDropdown,
+        component: Dropdown,
     },
 ];
 
