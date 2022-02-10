@@ -1,11 +1,14 @@
 <template>
-    <div class="relative" v-click-outside="onClickOutside">
+    <div
+        class="relative"
+        v-click-outside="onClickOutside"
+        @click="showCategories"
+    >
         <slot name="toggler">
             <button
-                @click="showCategories"
                 class="flex max-h-52 w-full overflow-auto py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
             >
-                from Vue
+                {{ title }}
                 <svg
                     class="absolute"
                     :class="
@@ -43,6 +46,7 @@ import vClickOutside from "click-outside-vue3";
 import { ref, onMounted, provide } from "vue";
 export default {
     name: "Dropdown",
+    props: ["title"],
     directives: {
         clickOutside: vClickOutside.directive,
     },
@@ -77,6 +81,7 @@ export default {
             sharedState,
             showCategories,
             onClickOutside,
+
             /*             categories,
             getCategories,
             onMounted,

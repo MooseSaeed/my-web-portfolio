@@ -19,11 +19,7 @@
         <!--  Category -->
         <div class="override relative lg:inline-flex items-center bg-blue-100 rounded-xl">
 
-            <Dropdown>
-
-                <template slot="toggler">
-                    <button>from blade</button>
-                </template>
+            <Dropdown title="Categories">
 
                 <Dropdowncontent>
 
