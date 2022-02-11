@@ -36,3 +36,7 @@ select {
 .wavingHand {
     width: 35px !important;
 }
+
+.selectedCategoryItem {
+    background: blue;
+}

@@ -20,16 +20,19 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\Category::factory()->create([
             'name' => 'Frontend',
+            'slug' => 'frontend',
             'id' => '1'
         ]);
 
         \App\Models\Category::factory()->create([
             'name' => 'Backend',
+            'slug' => 'backend',
             'id' => '2'
         ]);
 
         \App\Models\Category::factory()->create([
             'name' => 'General',
+            'slug' => 'general',
             'id' => '3'
         ]);
 

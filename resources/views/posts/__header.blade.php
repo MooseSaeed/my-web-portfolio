@@ -17,28 +17,21 @@
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">
         <!--  Category -->
-        <div class="override relative lg:inline-flex items-center bg-blue-100 rounded-xl">
+        <div
+            class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
 
-            <Dropdown title="Categories">
-
-                <Dropdowncontent>
-
-                    @foreach ($categories as $category)
-                        <Dropdownitems href="/?category={{ $category->slug }}">
-                            {{ $category->name }}
-                        </Dropdownitems>
-                    @endforeach
-
-                </Dropdowncontent>
-
-            </Dropdown>
+            <x-category-dropdown />
 
         </div>
 
         <!-- Search -->
-        <div class="override flex lg:inline-flex items-center bg-blue-50 rounded-xl px-3 py-2">
+        <div
+            class="override flex lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl px-3 py-2">
             <form method="GET" action="#">
-                <input type="text" name="search" placeholder="Looking for something?"
+                @if (request('category'))
+                    <input type="hidden" name="category" value="{{ request('category') }}">
+                @endif
+                <input type="text" name="search" placeholder="Looking for something?" value="{{ request('search') }}"
                     class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
             </form>
         </div>

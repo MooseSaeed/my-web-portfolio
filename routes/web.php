@@ -20,15 +20,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [Postcontroller::class, 'index'])->name('home');
 route::get('posts/{post:slug}', [Postcontroller::class, 'show']);
-route::get('list', [CategoryController::class, 'list']);
-
-route::get('authors/{author:username}', function (User $author) {
-    return view('posts.index', [
-        'posts' => $author->posts,
-        'authors' => User::all(),
-        'categories' => Category::all(),
-    ]);
-});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
