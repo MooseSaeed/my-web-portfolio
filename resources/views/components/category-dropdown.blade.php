@@ -2,19 +2,14 @@
 
     <Dropdowncontent>
 
-        <Dropdownitems href="/">
-            All
-        </Dropdownitems>
+        <Dropdownitems href="/" category="All"></Dropdownitems>
 
-        <div>
-            @foreach ($categories as $category)
-                <Dropdownitems
-                    href="/?category={{ $category->slug }}&{{ http_build_query(request()->except('category')) }}"
-                    class="{{ isset($currentCategory) && $currentCategory->is($category) ? ' selectedCategoryItem' : '' }}">
-                    {{ $category->name }}
-                </Dropdownitems>
-            @endforeach
-        </div>
+        @foreach ($categories as $category)
+            <Dropdownitems category="{{ $category->name }}"
+                href="/?category={{ $category->slug }}&{{ http_build_query(request()->except('category')) }}"
+                class="{{ isset($currentCategory) && $currentCategory->is($category) ? ' selectedCategoryItem' : '' }}">
+            </Dropdownitems>
+        @endforeach
 
     </Dropdowncontent>
 
