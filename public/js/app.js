@@ -24880,26 +24880,10 @@ __webpack_require__.r(__webpack_exports__);
     };
 
     (0,vue__WEBPACK_IMPORTED_MODULE_1__.provide)("sharedState", sharedState);
-    /*         const categories = ref([]);
-      const getCategories = () => {
-        axios.get("/list").then((response) => {
-            categories.value = response.data.categories;
-        });
-    };
-      onMounted(() => {
-        getCategories();
-    });
-      const categoryRoute = ref("/?category="); */
-
     return {
       sharedState: sharedState,
       showCategories: showCategories,
       onClickOutside: onClickOutside
-      /*             categories,
-      getCategories,
-      onMounted,
-      categoryRoute, */
-
     };
   }
 });

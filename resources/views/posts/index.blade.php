@@ -3,7 +3,6 @@
     @include('posts.__header')
 
     @if ($posts->count())
-
         <x-featuredCard :post="$posts[0]" />
 
         @if ($posts->count() > 1)
@@ -22,6 +21,8 @@
             </div>
 
         @endif
+
+        {{ $posts->links() }}
 
     @else
         <p>No posts yet, please check back later.</p>

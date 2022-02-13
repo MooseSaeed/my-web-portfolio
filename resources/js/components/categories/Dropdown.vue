@@ -63,29 +63,10 @@ export default {
 
         provide("sharedState", sharedState);
 
-        /*         const categories = ref([]);
-
-        const getCategories = () => {
-            axios.get("/list").then((response) => {
-                categories.value = response.data.categories;
-            });
-        };
-
-        onMounted(() => {
-            getCategories();
-        });
-
-        const categoryRoute = ref("/?category="); */
-
         return {
             sharedState,
             showCategories,
             onClickOutside,
-
-            /*             categories,
-            getCategories,
-            onMounted,
-            categoryRoute, */
         };
     },
 };
