@@ -1,25 +1,16 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostCommentController;
 use App\Http\Controllers\Postcontroller;
-use App\Models\Category;
-use App\Models\Post;
-use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', [Postcontroller::class, 'index'])->name('home');
-route::get('posts/{post:slug}', [Postcontroller::class, 'show']);
+
+
+Route::get('posts/{post:slug}', [Postcontroller::class, 'show']);
+
+Route::post('posts/{post:slug}/comments', [PostCommentController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

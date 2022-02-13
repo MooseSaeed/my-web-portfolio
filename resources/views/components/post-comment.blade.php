@@ -8,9 +8,9 @@
 
     <div>
         <header class="mb-4">
-            <h3 class="font-bold">{{ $comment->author->username }}</h3>
+            <h3 class="font-bold">{{ $comment->name }}</h3>
             <p class="text-xs">Posted
-                <time>{{ $comment->created_at }}</time>
+                <time>{{ $comment->created_at->format('F j, y, g:i a') }}</time>
             </p>
         </header>
 
