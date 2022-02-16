@@ -58,19 +58,19 @@
                 <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>
 
                 <div id="newsletter" class="mt-10">
-                    <div class="relative inline-block mx-auto lg:bg-blue-100 rounded-full">
-                        <form method="POST" action="#" class="lg:flex text-sm">
-                            <div class="lg:py-3 lg:px-5 flex items-center">
-                                <label for="email" class="hidden lg:inline-block">
+                    <div class="relative inline-block mx-auto bg-blue-100 rounded-full">
+                        <form method="POST" action="#" class="sm:flex text-sm">
+                            <div class="py-2 px-3 flex md:py-3 md:px-5 items-center">
+                                <label for="email" class="inline-block">
                                     <img src="/images/mailbox-icon.svg" alt="mailbox letter" />
                                 </label>
 
                                 <input id="email" type="text" placeholder="Your email address"
-                                    class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none outline-none border-none" />
+                                    class="bg-transparent text-center sm:text-left py-1 pl-3 md:py-2 md:pl-4 focus-within:outline-none outline-none border-none" />
                             </div>
 
                             <button type="submit"
-                                class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
+                                class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 rounded-full text-xs font-semibold text-white uppercase mb-2 sm:mb-0 py-2 px-7 md:py-3 md:px-8">
                                 Subscribe
                             </button>
                         </form>
