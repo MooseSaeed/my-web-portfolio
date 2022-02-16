@@ -25,7 +25,27 @@
         </div>
 
         <!-- Search -->
+
         <div
+            class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
+            <form method="GET" action="#" class="">
+                <div class="flex justify-between items-center text-center">
+                    @if (request('category'))
+                        <input type="hidden" name="category" value="{{ request('category') }}">
+                    @endif
+                    <input type="text" name="search" placeholder="Looking for something?"
+                        value="{{ request('search') }}"
+                        class="shadow-none w-full focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
+                    <button type="submit"
+                        class="transition-colors duration-300 bg-green-100 hover:bg-green-200 m-1 rounded-xl text-xs font-semibold text-black uppercase py-2 px-6">
+                        Search
+                    </button>
+
+                </div>
+            </form>
+        </div>
+
+        {{-- <div
             class="override flex lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl px-3 py-2">
             <form method="GET" action="#">
                 @if (request('category'))
@@ -34,6 +54,6 @@
                 <input type="text" name="search" placeholder="Looking for something?" value="{{ request('search') }}"
                     class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
             </form>
-        </div>
+        </div> --}}
     </div>
 </header>

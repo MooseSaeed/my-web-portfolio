@@ -21,7 +21,8 @@
 <body style="font-family: Open Sans, sans-serif" class="scroll-smooth">
 
     <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-700">
-        <nav class="grid grid-rows-2 py-3 px-10 bg-white gap-4 justify-center items-center md:flex md:justify-between md:items-center">
+        <nav
+            class="grid grid-rows-2 py-3 px-10 bg-white gap-4 justify-center items-center md:flex md:justify-between md:items-center">
 
             <div class="justify-self-center">
                 <a href="/">
@@ -33,7 +34,8 @@
                 <a href="/" class="text-xs font-bold uppercase">Dashboard Page</a>
 
                 <a href="#newsletter">
-                    <button href="#newsletter" class="transition-colors duration-300 bg-purple-500 hover:bg-blue-600 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
+                    <button href="#newsletter"
+                        class="transition-colors duration-300 bg-purple-500 hover:bg-blue-600 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                         Subscribe for Updates
                     </button>
                 </a>
@@ -63,10 +65,12 @@
                                     <img src="/images/mailbox-icon.svg" alt="mailbox letter" />
                                 </label>
 
-                                <input id="email" type="text" placeholder="Your email address" class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none outline-none border-none" />
+                                <input id="email" type="text" placeholder="Your email address"
+                                    class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none outline-none border-none" />
                             </div>
 
-                            <button type="submit" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
+                            <button type="submit"
+                                class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
                                 Subscribe
                             </button>
                         </form>
