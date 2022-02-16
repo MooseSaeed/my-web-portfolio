@@ -22,6 +22,6 @@ class NewsletterController extends Controller
             ]);
         }
 
-        return redirect('/');
+        return redirect('/')->with('success', 'You have subscribed to my Newsletter ♥');
     }
 }

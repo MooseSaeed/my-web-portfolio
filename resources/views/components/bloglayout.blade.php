@@ -18,7 +18,7 @@
 </head>
 
 
-<body style="font-family: Open Sans, sans-serif" class="scroll-smooth">
+<body id="app" style="font-family: Open Sans, sans-serif" class="scroll-smooth">
 
     <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-700">
         <nav
@@ -45,7 +45,7 @@
 
     <section class="px-6 pb-6 pt-2">
 
-        <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6" id="app">
+        <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
 
             {{ $slot }}
 
@@ -85,9 +85,7 @@
     </section>
 
     @if (session()->has('success'))
-        <div class="fixed bottom-3 right-3 text-white bg-blue-500 py-2 px-4 rounded-xl text-sm">
-            <p>{{ session('success') }}</p>
-        </div>
+        <Flashmessage message="{{ session('success') }}" />
     @endif
 
 </body>

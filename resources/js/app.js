@@ -12,12 +12,14 @@ import Dropdown from "./components/categories/Dropdown";
 import Dropdowncontent from "./components/categories/Dropdowncontent";
 import Dropdownitems from "./components/categories/Dropdownitems";
 import vClickOutside from "click-outside-vue3";
+import Flashmessage from "./components/Flashmessage";
 
 createApp({
     components: {
         Dropdown,
         Dropdowncontent,
         Dropdownitems,
+        Flashmessage,
     },
 })
     .use(router, vClickOutside)
