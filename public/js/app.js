@@ -25194,21 +25194,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
-/* harmony import */ var _components_categories_Dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/categories/Dropdown */ "./resources/js/components/categories/Dropdown.vue");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 
-
-var routes = [{
-  path: "/",
-  name: "home",
-  component: _components_categories_Dropdown__WEBPACK_IMPORTED_MODULE_0__["default"]
-}, {
-  path: "/categories/:slug",
-  name: "categories",
-  component: _components_categories_Dropdown__WEBPACK_IMPORTED_MODULE_0__["default"]
-}];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createWebHistory)(),
+var routes = [];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue_router__WEBPACK_IMPORTED_MODULE_0__.createRouter)({
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_0__.createWebHistory)(),
   routes: routes
 }));
 
