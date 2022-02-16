@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,40 +15,39 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::factory()->create([
+        $user = \App\Models\User::factory()->create([
             'name' => 'Mostafa Said',
-            'id' => '1'
         ]);
 
-        \App\Models\Category::factory()->create([
+        Post::factory(10)->create([
+            'user_id' => $user
+        ]);
+
+        /* 
+        $frontend = Category::factory()->create([
             'name' => 'Frontend',
-            'slug' => 'frontend',
-            'id' => '1'
+            'slug' => 'frontend'
         ]);
-
-        \App\Models\Category::factory()->create([
+        $backend = Category::factory()->create([
             'name' => 'Backend',
-            'slug' => 'backend',
-            'id' => '2'
+            'slug' => 'backend'
         ]);
-
-        \App\Models\Category::factory()->create([
+        $general = Category::factory()->create([
             'name' => 'General',
-            'slug' => 'general',
-            'id' => '3'
+            'slug' => 'general'
         ]);
 
-        \App\Models\Post::factory(4)->create([
-            'category_id' => 1,
-            'user_id' => 1,
+        Post::factory(3)->create([
+            'user_id' => $user->id,
+            'category_id' => $frontend->id
         ]);
-        \App\Models\Post::factory(4)->create([
-            'category_id' => 2,
-            'user_id' => 1,
+        Post::factory(3)->create([
+            'user_id' => $user->id,
+            'category_id' => $backend->id
         ]);
-        \App\Models\Post::factory(4)->create([
-            'category_id' => 3,
-            'user_id' => 1,
-        ]);
+        Post::factory(3)->create([
+            'user_id' => $user->id,
+            'category_id' => $general->id
+        ]); */
     }
 }
