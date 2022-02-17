@@ -26,7 +26,7 @@ class AdminPostController extends Controller
 
         Post::create($attributes);
 
-        return redirect('/');
+        return redirect('/')->with('success', 'Your post has been published successfully');
     }
 
     /**

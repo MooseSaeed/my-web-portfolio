@@ -22,6 +22,6 @@ class PostCommentController extends Controller
             'email' => request('email')
         ]);
 
-        return back()->with('success', 'Your comment has been posted');
+        return back()->with('success', 'Your comment has been posted to the world');
     }
 }
