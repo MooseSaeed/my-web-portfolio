@@ -2,7 +2,7 @@
     class="py-6 px-5 flex flex-col justify-between transition-colors duration-300 
 hover:bg-blue-50 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
     <div>
-        <img src="/images/pic sample 2.jpg" alt="Blog Post illustration" class="rounded-xl" />
+        <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="Blog Post illustration" class="rounded-xl" />
     </div>
 
     <header class="mt-4">

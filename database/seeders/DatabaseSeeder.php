@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,7 +17,17 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        Post::factory(10)->create();
+        $user = User::factory()->create([
+            'name' => 'Mostafa Said',
+            'email' => 'mostafasaid1994@gmail.com',
+            'password' => '$2y$10$ReKXgbTVLecMg3Hjqwz1KeKb/Nm/QcGvUj7nEWKj3UpJaJKqwDavG',
+            'username' => 'MooseS94'
+        ]);
+
+        Post::factory(10)->create([
+            'user_id' => $user,
+            'thumbnail' => 'thumbnails/mKsUjgvkM1Jv2SbiOs6ODVSmQXLtyoq58CFHpwsX.jpg'
+        ]);
 
         /* 
         $frontend = Category::factory()->create([

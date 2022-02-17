@@ -27,6 +27,7 @@ class StorePostRequest extends FormRequest
         return [
 
             'title' => ['required', Rule::unique('posts', 'title')],
+            'thumbnail' => 'required|image',
             'excerpt' => 'required',
             'body' => 'required',
             'category_id' => ['required', Rule::exists('categories', 'id')]

@@ -11,7 +11,7 @@
                     </p>
 
                     <div class="flex items-center lg:justify-center text-sm mt-4">
-                        <img src="/images/pic sample.jpg" alt="Post Pic" />
+                        <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="Post Pic" />
                         <div class="ml-3 text-left"></div>
                     </div>
                 </div>

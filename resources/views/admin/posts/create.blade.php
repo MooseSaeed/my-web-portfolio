@@ -1,5 +1,8 @@
-<section class="px-6 py-8 border border-gray-200 p-6 rounded-xl max-w-md m-auto">
-    <form action="/admin/dashboard" method="POST">
+<section class="px-6 py-8 border border-gray-200 p-6 rounded-xl max-w-xl m-auto">
+    <h1 class="text-lg font-bold mb-4">
+        Publish New Post
+    </h1>
+    <form action="/admin/dashboard" method="POST" enctype="multipart/form-data">
         @csrf
 
         <div class="mb-6">
@@ -11,6 +14,20 @@
             <input class="border border-gray-400 p-2 w-full" type="text" name="title" id="title" required>
 
             @error('title')
+                <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
+            @enderror
+
+        </div>
+
+        <div class="mb-6">
+
+            <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="thumbnail">
+                Thumbnail
+            </label>
+
+            <input class="border border-gray-400 p-2 w-full" type="file" name="thumbnail" id="thumbnail" required>
+
+            @error('thumbnail')
                 <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
             @enderror
 

@@ -22,6 +22,7 @@ class AdminPostController extends Controller
         $attributes = $request->validated();
         $attributes['user_id'] = auth()->id();
         $attributes['slug'] = Str::slug($attributes['title']);
+        $attributes['thumbnail'] = request()->file('thumbnail')->store('thumbnails');
 
         Post::create($attributes);
 
