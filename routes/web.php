@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminPostController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PostCommentController;
 use App\Http\Controllers\Postcontroller;
@@ -11,8 +12,12 @@ Route::post('posts/{post:slug}/comments', [PostCommentController::class, 'store'
 
 Route::post('newsletter', NewsletterController::class);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+/* route::resource('admin/posts', AdminPostController::class); */
+
+Route::resource('admin/dashboard', AdminPostController::class, [
+    'names' => [
+        'index' => 'dashboard'
+    ]
+])->middleware(['auth']);
 
 require __DIR__ . '/auth.php';
