@@ -31,11 +31,39 @@
             </div>
 
             <div class="flex flex-col gap-2 md:block items-center justify-center">
-                <a href="/" class="text-xs font-bold uppercase">Dashboard Page</a>
+                @auth
 
+                    <div
+                        class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
+
+                        <Dropdown class="w-40" title="{{ Auth::user()->name }}">
+
+                            <Dropdowncontent>
+
+                                <Dropdownitems href="/admin/dashboard" category="Dashboard">
+                                </Dropdownitems>
+                                <Dropdownitems href="/" category="Homepage">
+                                </Dropdownitems>
+
+                                <form method="POST" action="/logout">
+                                    @csrf
+                                    <Dropdownitems>
+                                        <button type="submit">Logout</button>
+                                    </Dropdownitems>
+                                </form>
+
+                            </Dropdowncontent>
+
+                        </Dropdown>
+
+                    </div>
+                @endauth
                 <a href="#newsletter">
                     <button href="#newsletter"
-                        class="transition-colors duration-300 bg-purple-500 hover:bg-blue-600 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
+                        class="demogardNewsletter transition duration-300 font-semibold 
+                        bg-gradient-to-r from-purple-600 to-blue-500
+                        hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
+                       text-white rounded-full ml-1 py-3 px-7 text-sm">
                         Subscribe for Updates
                     </button>
                 </a>

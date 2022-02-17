@@ -51,6 +51,19 @@ select {
 .demogardPostComment:focus {
     background-position: 149.6px !important;
 }
+.demogardNewsletter {
+    -webkit-transition: background 1s ease-out !important;
+    -moz-transition: background 1s ease-out !important;
+    -o-transition: background 1s ease-out !important;
+    transition: background 1s ease-out !important;
+}
+
+.demogardNewsletter:hover {
+    background-position: 205.1px !important;
+}
+.demogardNewsletter:focus {
+    background-position: 205.1px !important;
+}
 
 .newsletterlogo {
     width: 220px !important;

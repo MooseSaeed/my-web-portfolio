@@ -6,7 +6,7 @@
     >
         <slot name="toggler">
             <button
-                class="flex max-h-52 w-full overflow-auto py-2 pl-3 pr-9 text-sm font-semibold lg:inline-flex lg:w-32"
+                class="flex max-h-52 w-full overflow-auto py-2 pl-3 text-sm font-semibold lg:inline-flex lg:w-32"
             >
                 {{ title }}
                 <svg
@@ -43,7 +43,7 @@
 
 <script>
 import vClickOutside from "click-outside-vue3";
-import { ref, onMounted, provide } from "vue";
+import { ref, provide } from "vue";
 export default {
     name: "Dropdown",
     props: ["title"],
