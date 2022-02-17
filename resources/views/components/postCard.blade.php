@@ -47,7 +47,8 @@ hover:bg-blue-50 border border-black border-opacity-0 hover:border-opacity-5 rou
                 bg-gradient-to-r from-purple-600 to-blue-500
                 hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
                text-white rounded-full py-2 px-8 text-xs">Read
-                More</a>
+                More
+            </a>
         </div>
 
     </footer>

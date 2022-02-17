@@ -1,3 +1,8 @@
+textarea:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
 input:focus {
     box-shadow: none !important;
 }
@@ -31,6 +36,24 @@ select {
 }
 .demogard:focus {
     background-position: 126.6px !important;
+}
+
+.demogardPostComment {
+    -webkit-transition: background 1s ease-out !important;
+    -moz-transition: background 1s ease-out !important;
+    -o-transition: background 1s ease-out !important;
+    transition: background 1s ease-out !important;
+}
+
+.demogardPostComment:hover {
+    background-position: 149.6px !important;
+}
+.demogardPostComment:focus {
+    background-position: 149.6px !important;
+}
+
+.newsletterlogo {
+    width: 220px !important;
 }
 
 .wavingHand {

@@ -45,14 +45,15 @@
 
     <section class="px-6 pb-6 pt-2">
 
-        <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
+        <main class="max-w-6xl mx-auto mt-6 lg:mt-10 space-y-6">
 
             {{ $slot }}
 
         </main>
         <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
             <footer class="flex flex-col justify-center items-center bg-blue-50 text-center py-16 px-10 rounded-xl">
-                <img src="/images/My Logo Newsletter.png" width="220px" class="mb-3" alt="" />
+                <img class="newsletterlogo" src="/images/My-Logo-Newsletter.png" width="220px" class="mb-3"
+                    alt="" />
 
                 <h5 class="text-3xl">Subscribe to my newsletter and stay up to date.</h5>
                 <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>
