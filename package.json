@@ -26,7 +26,6 @@
     },
     "dependencies": {
         "click-outside-vue3": "^4.0.1",
-        "vue": "^3.2.29",
-        "vue-router": "^4.0.12"
+        "vue": "^3.2.29"
     }
 }
