@@ -24760,7 +24760,7 @@ __webpack_require__.r(__webpack_exports__);
       this.mouseLeaveDelay = setTimeout(function () {
         _this.mouseX = 0;
         _this.mouseY = 0;
-      }, 1000);
+      }, 100);
     }
   }
 });
@@ -24915,7 +24915,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)($options.cardStyle)
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")], 4
   /* STYLE */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("         <div class=\"card\" :style=\"cardStyle\">\r\n            <div class=\"card-bg\" :style=\"[cardBgTransform, cardBgImage]\"></div>\r\n            <div class=\"card-info\">\r\n                <slot name=\"header\"></slot>\r\n                <slot name=\"content\"></slot>\r\n            </div>\r\n        </div> ")], 544
+  )], 544
   /* HYDRATE_EVENTS, NEED_PATCH */
   );
 }

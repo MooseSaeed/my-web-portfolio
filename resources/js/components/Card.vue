@@ -9,14 +9,6 @@
         <div class="card" :style="cardStyle">
             <slot />
         </div>
-
-        <!--         <div class="card" :style="cardStyle">
-            <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
-            <div class="card-info">
-                <slot name="header"></slot>
-                <slot name="content"></slot>
-            </div>
-        </div> -->
     </div>
 </template>
 
@@ -75,7 +67,7 @@ export default {
             this.mouseLeaveDelay = setTimeout(() => {
                 this.mouseX = 0;
                 this.mouseY = 0;
-            }, 1000);
+            }, 100);
         },
     },
 };

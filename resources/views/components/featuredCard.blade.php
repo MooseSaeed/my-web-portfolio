@@ -18,7 +18,7 @@
                             style="font-size: 10px">{{ $post->category->name }}</a>
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 card-info">
                         <a href="/posts/{{ $post->slug }}">
                             <h1 class="text-3xl">
                                 {{ $post->title }}
@@ -31,7 +31,7 @@
                     </div>
                 </header>
 
-                <div class="text-sm mt-2">
+                <div class="card-info text-sm mt-2">
                     <p>
                         {{ $post->excerpt }}
                     </p>
