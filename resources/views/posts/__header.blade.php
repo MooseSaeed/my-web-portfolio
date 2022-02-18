@@ -17,8 +17,7 @@
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">
         <!--  Category -->
-        <div
-            class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
+        <div class="override relative lg:inline-flex items-center rounded-xl bg-blue-100">
 
             <x-category-dropdown />
 
@@ -26,8 +25,7 @@
 
         <!-- Search -->
 
-        <div
-            class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
+        <div class="override relative lg:inline-flex items-center rounded-xl bg-blue-100">
             <form method="GET" action="#" class="">
                 <div class="flex justify-between items-center text-center">
                     @if (request('category'))
@@ -37,7 +35,7 @@
                         value="{{ request('search') }}"
                         class="shadow-none w-full focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
                     <button type="submit"
-                        class="transition-colors duration-300 bg-green-100 hover:bg-green-200 m-1 rounded-xl text-xs font-semibold text-black uppercase py-2 px-6">
+                        class="transition-colors duration-300 bg-blue-200 hover:bg-blue-300 m-1 rounded-xl text-xs font-semibold text-black uppercase py-2 px-6">
                         Search
                     </button>
 
