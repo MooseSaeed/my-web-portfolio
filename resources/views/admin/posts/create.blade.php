@@ -1,5 +1,5 @@
-<section class="px-6 py-8 border border-gray-200 p-6 rounded-xl max-w-xl m-auto">
-    <h1 class="text-lg font-bold mb-4">
+<section class="px-6 py-8 border border-gray-200 rounded-xl max-w-2xl m-auto">
+    <h1 class="text-lg font-bold mb-4 border-b-2 pb-8">
         Publish New Post
     </h1>
     <form action="/admin/dashboard" method="POST" enctype="multipart/form-data">

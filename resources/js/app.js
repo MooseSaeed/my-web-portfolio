@@ -12,6 +12,7 @@ import Dropdowncontent from "./components/categories/Dropdowncontent";
 import Dropdownitems from "./components/categories/Dropdownitems";
 import vClickOutside from "click-outside-vue3";
 import Flashmessage from "./components/Flashmessage";
+import Card from "./components/Card";
 
 createApp({
     components: {
@@ -19,6 +20,7 @@ createApp({
         Dropdowncontent,
         Dropdownitems,
         Flashmessage,
+        Card,
     },
 })
     .use(vClickOutside)
