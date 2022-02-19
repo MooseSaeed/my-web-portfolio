@@ -24,12 +24,6 @@ class DatabaseSeeder extends Seeder
             'username' => 'MooseS94'
         ]);
 
-        Post::factory(10)->create([
-            'user_id' => $user,
-            'thumbnail' => 'thumbnails/mKsUjgvkM1Jv2SbiOs6ODVSmQXLtyoq58CFHpwsX.jpg'
-        ]);
-
-        /* 
         $frontend = Category::factory()->create([
             'name' => 'Frontend',
             'slug' => 'frontend'
@@ -43,17 +37,20 @@ class DatabaseSeeder extends Seeder
             'slug' => 'general'
         ]);
 
-        Post::factory(3)->create([
-            'user_id' => $user->id,
-            'category_id' => $frontend->id
+        Post::factory(4)->create([
+            'user_id' => $user,
+            'category_id' => $frontend,
+            'thumbnail' => 'thumbnails/mKsUjgvkM1Jv2SbiOs6ODVSmQXLtyoq58CFHpwsX.jpg'
         ]);
-        Post::factory(3)->create([
-            'user_id' => $user->id,
-            'category_id' => $backend->id
+        Post::factory(4)->create([
+            'user_id' => $user,
+            'category_id' => $backend,
+            'thumbnail' => 'thumbnails/mKsUjgvkM1Jv2SbiOs6ODVSmQXLtyoq58CFHpwsX.jpg'
         ]);
-        Post::factory(3)->create([
-            'user_id' => $user->id,
-            'category_id' => $general->id
-        ]); */
+        Post::factory(4)->create([
+            'user_id' => $user,
+            'category_id' => $general,
+            'thumbnail' => 'thumbnails/mKsUjgvkM1Jv2SbiOs6ODVSmQXLtyoq58CFHpwsX.jpg'
+        ]);
     }
 }

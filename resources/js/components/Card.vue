@@ -73,4 +73,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@media screen and (max-width: 1024px) {
+    .card {
+        transform: none !important;
+    }
+}
+</style>

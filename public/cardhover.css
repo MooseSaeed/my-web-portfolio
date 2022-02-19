@@ -32,7 +32,7 @@ p + p {
 }  */
 
 .card-wrap {
-    transform: perspective(10000px);
+    transform: perspective(200rem);
     transform-style: preserve-3d;
 }
 .card-wrap:hover .card-info {
@@ -93,10 +93,10 @@ p + p {
 
 .card-info {
     transform: translateY(10%);
-    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: 0.6s 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .card-info p {
-    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: 0.6s 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .card-info:after {
