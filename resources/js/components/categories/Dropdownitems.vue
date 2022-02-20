@@ -1,5 +1,5 @@
 <template>
-    <a href="" class="demogard categoryItems">
+    <a href="" type="" class="demogard categoryItems">
         <slot>{{ category }}</slot>
     </a>
 </template>

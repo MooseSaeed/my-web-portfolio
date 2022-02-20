@@ -9,7 +9,7 @@
         <form method="POST" action="/logout">
             @csrf
             <Dropdownitems>
-                <button type="submit">Logout</button>
+                <button :type="submit">Logout</button>
             </Dropdownitems>
         </form>
 

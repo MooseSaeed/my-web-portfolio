@@ -25077,6 +25077,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = {
   href: "",
+  type: "",
   "class": "demogard categoryItems"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {

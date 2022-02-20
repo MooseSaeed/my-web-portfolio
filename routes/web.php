@@ -20,7 +20,7 @@ Route::resource('admin/posts', AdminPostController::class, [
     'names' => [
         'index' => 'dashboard'
     ]
-])->middleware(['auth']);
+])->middleware(['auth'])->middleware('admin');
 
 
 require __DIR__ . '/auth.php';
