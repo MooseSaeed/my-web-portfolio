@@ -1,11 +1,11 @@
 <header class="max-w-xl mx-auto mt-10 text-center">
     <h1 class="text-4xl">
         <span class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 px-2 py-1 rounded-xl text-white">
-            Hands On Tech</span>
+            Code is Puppet</span>
         blog
     </h1>
 
-    <h2 class="inline-flex mt-2 items-center">
+    <h2 class="inline-flex mt-3 items-center">
         By Mostafa Said
         <img class="wavingHand" src="/images/wavinghand.png" width="35px" alt="Waving Hand" />
     </h2>
@@ -48,10 +48,9 @@
             <form method="GET" action="#">
                 @if (request('category'))
                     <input type="hidden" name="category" value="{{ request('category') }}">
-                @endif
-                <input type="text" name="search" placeholder="Looking for something?" value="{{ request('search') }}"
-                    class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
-            </form>
-        </div> --}}
+        @endif
+        <input type="text" name="search" placeholder="Looking for something?" value="{{ request('search') }}" class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
+        </form>
+    </div> --}}
     </div>
 </header>

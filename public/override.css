@@ -65,6 +65,20 @@ select {
     background-position: 205.1px !important;
 }
 
+.demogardNewsletterbutton {
+    -webkit-transition: background 1s ease-out !important;
+    -moz-transition: background 1s ease-out !important;
+    -o-transition: background 1s ease-out !important;
+    transition: background 1s ease-out !important;
+}
+
+.demogardNewsletterbutton:hover {
+    background-position: 89.8px !important;
+}
+.demogardNewsletterbutton:focus {
+    background-position: 89.8px !important;
+}
+
 .newsletterlogo {
     width: 220px !important;
 }
