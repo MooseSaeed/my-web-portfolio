@@ -18,7 +18,8 @@ Route::post('newsletter', NewsletterController::class);
 
 Route::resource('admin/posts', AdminPostController::class, [
     'names' => [
-        'index' => 'dashboard'
+        'index' => 'dashboard',
+        'create' => 'newpost'
     ]
 ])->middleware(['auth'])->middleware('admin');
 
