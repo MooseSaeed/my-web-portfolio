@@ -71,7 +71,7 @@
                     <div class="relative inline-block mx-auto bg-blue-100 rounded-full">
                         <form method="POST" action="/newsletter" class="sm:flex text-sm">
                             @csrf
-                            <div class="py-2 px-3 flex items-center">
+                            <div class="py-1 px-3 flex items-center">
                                 <label for="email" class="inline-block">
                                     <img src="/images/mailbox-icon.svg" alt="mailbox letter" />
                                 </label>
@@ -85,7 +85,7 @@
                             <button href="#newsletter" class="demogardNewsletterbutton transition duration-300 font-semibold 
                         bg-gradient-to-r from-purple-600 to-blue-500
                         hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
-                       text-white rounded-full ml-1 py-1 px-3 text-sm">
+                       text-white rounded-full ml-1 py-1 px-6 text-sm">
                                 Subscribe
                             </button>
                         </form>
