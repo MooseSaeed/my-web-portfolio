@@ -21,30 +21,21 @@ hover:bg-blue-50 border border-black border-opacity-0 hover:border-opacity-5 rou
         </div>
     </header>
 
-    <div class="text-sm mt-4">
+    <div class="text-sm mt-8">
         <p> {!! $post->excerpt !!}</p>
     </div>
 
     <footer class="flex flex-col sm:flex-row lg:flex-col xl:flex-row justify-between items-center mt-8">
-        <div class="flex items-center text-sm">
-            <a href="/?author={{ $post->author->username }}">
-                <img src="/images/My Logo Avatar.png" alt="Logo avatar" />
-            </a>
-            <div class="ml-3">
-                <a href="/?author={{ $post->author->username }}">
-                    <h5 class="font-bold">{{ $post->author->name }}</h5>
-                </a>
-            </div>
-        </div>
+        <div></div>
 
-        <div class="">
-            <a href="/posts/{{ $post->slug }}" class="demogard transition duration-300 font-semibold 
+
+        <a href="/posts/{{ $post->slug }}" class="demogard transition duration-300 font-semibold 
                 bg-gradient-to-r from-purple-600 to-blue-500
                 hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
                text-white rounded-full py-2 px-8 text-xs">Read
-                More
-            </a>
-        </div>
+            More
+        </a>
+
 
     </footer>
 </article>
