@@ -34,9 +34,6 @@
             {{ $slot }}
         </main>
     </div>
-    @if (session()->has('success'))
-        <Flashmessage message="{{ session('success') }}" />
-    @endif
 </body>
 
 </html>

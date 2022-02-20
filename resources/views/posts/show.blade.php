@@ -27,7 +27,7 @@
                             < Back to Posts </a>
 
                                 <div class="space-x-2">
-                                    <a href="/categories/{{ $post->category->slug }}"
+                                    <a href="/?category={{ $post->category->slug }}"
                                         class="px-3 py-1 border border-violet-400 rounded-full text-violet-400 text-xs uppercase font-semibold"
                                         style="font-size: 10px">{{ $post->category->name }}</a>
                                 </div>
@@ -38,7 +38,7 @@
                     </h1>
 
                     <div class="space-y-4 lg:text-lg leading-loose">
-                        {{ $post->body }}
+                        {!! $post->body !!}
                     </div>
                 </div>
 

@@ -2,10 +2,9 @@
 
     <Dropdowncontent>
 
-        <Dropdownitems href="/admin/dashboard" category="Dashboard">
-        </Dropdownitems>
-        <Dropdownitems href="/" category="Homepage">
-        </Dropdownitems>
+        <Dropdownitems href="/" category="Homepage"></Dropdownitems>
+        <Dropdownitems href="/admin/posts" category="Manage Posts"></Dropdownitems>
+        <Dropdownitems href="/admin/posts/create" category="New Post"></Dropdownitems>
 
         <form method="POST" action="/logout">
             @csrf

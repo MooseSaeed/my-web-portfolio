@@ -1,88 +1,94 @@
-<section class="px-6 py-8 border border-gray-200 rounded-xl max-w-2xl m-auto">
-    <h1 class="text-lg font-bold mb-4 border-b-2 pb-8">
-        Publish New Post
-    </h1>
-    <form action="/admin/dashboard" method="POST" enctype="multipart/form-data">
-        @csrf
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('New Post') }}
+        </h2>
+    </x-slot>
+    <x-adminLayout>
 
-        <div class="mb-6">
+        <form action="/admin/posts" method="POST" enctype="multipart/form-data">
+            @csrf
 
-            <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="title">
-                Title
-            </label>
+            <div class="mb-6">
 
-            <input class="border border-gray-400 p-2 w-full" type="text" name="title" id="title" required>
+                <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="title">
+                    Title
+                </label>
 
-            @error('title')
-                <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
-            @enderror
+                <input class="border border-gray-400 p-2 w-full" type="text" name="title" id="title" required>
 
-        </div>
+                @error('title')
+                    <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
+                @enderror
 
-        <div class="mb-6">
+            </div>
 
-            <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="thumbnail">
-                Thumbnail
-            </label>
+            <div class="mb-6">
 
-            <input class="border border-gray-400 p-2 w-full" type="file" name="thumbnail" id="thumbnail" required>
+                <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="thumbnail">
+                    Thumbnail
+                </label>
 
-            @error('thumbnail')
-                <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
-            @enderror
+                <input class="border border-gray-400 p-2 w-full" type="file" name="thumbnail" id="thumbnail" required>
 
-        </div>
+                @error('thumbnail')
+                    <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
+                @enderror
 
-        <div class="mb-6">
+            </div>
 
-            <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="excerpt">
-                Excerpt
-            </label>
+            <div class="mb-6">
 
-            <textarea class="border border-gray-400 p-2 w-full" type="text" name="excerpt" id="excerpt"
-                required></textarea>
+                <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="excerpt">
+                    Excerpt
+                </label>
 
-            @error('excerpt')
-                <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
-            @enderror
+                <textarea class="border border-gray-400 p-2 w-full" type="text" name="excerpt" id="excerpt"
+                    required></textarea>
 
-        </div>
+                @error('excerpt')
+                    <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
+                @enderror
 
-        <div class="mb-6">
+            </div>
 
-            <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="body">
-                Body
-            </label>
+            <div class="mb-6">
 
-            <textarea class="border border-gray-400 p-2 w-full" type="text" name="body" id="body" required></textarea>
+                <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="body">
+                    Body
+                </label>
 
-            @error('body')
-                <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
-            @enderror
+                <textarea class="border border-gray-400 p-2 w-full" type="text" name="body" id="body"
+                    required></textarea>
 
-        </div>
+                @error('body')
+                    <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
+                @enderror
 
-        <div class="mb-6">
+            </div>
 
-            <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="category_id">
-                Category
-            </label>
+            <div class="mb-6">
 
-            <select class="rounded-xl" name="category_id" id="category_id">
+                <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="category_id">
+                    Category
+                </label>
 
-                @foreach (App\Models\Category::all() as $category)
-                    <option value="{{ $category->id }}">{{ ucwords($category->name) }}</option>
-                @endforeach
-            </select>
+                <select class="rounded-xl" name="category_id" id="category_id">
 
-            @error('category_id')
-                <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
-            @enderror
+                    @foreach (App\Models\Category::all() as $category)
+                        <option value="{{ $category->id }}">{{ ucwords($category->name) }}</option>
+                    @endforeach
+                </select>
 
-        </div>
+                @error('category_id')
+                    <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
+                @enderror
 
-        <button type="submit"
-            class="bg-blue-500 hover:bg-blue-600 rounded-xl text-white font-semibold px-6 py-1 uppercase">Post</button>
+            </div>
 
-    </form>
-</section>
+            <button type="submit"
+                class="bg-blue-500 hover:bg-blue-600 rounded-xl text-white font-semibold px-6 py-1 uppercase">Post</button>
+
+        </form>
+    </x-adminLayout>
+</x-app-layout>

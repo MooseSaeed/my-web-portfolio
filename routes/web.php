@@ -16,12 +16,11 @@ Route::post('posts/{post:slug}/comments', [PostCommentController::class, 'store'
 
 Route::post('newsletter', NewsletterController::class);
 
-/* route::resource('admin/posts', AdminPostController::class); */
-
-Route::resource('admin/dashboard', AdminPostController::class, [
+Route::resource('admin/posts', AdminPostController::class, [
     'names' => [
         'index' => 'dashboard'
     ]
 ])->middleware(['auth']);
+
 
 require __DIR__ . '/auth.php';

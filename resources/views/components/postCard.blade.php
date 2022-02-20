@@ -26,7 +26,7 @@ hover:bg-blue-50 border border-black border-opacity-0 hover:border-opacity-5 rou
     </header>
 
     <div class="text-sm mt-4">
-        <p>{{ $post->excerpt }}</p>
+        <p> {!! $post->excerpt !!}</p>
     </div>
 
     <footer class="flex flex-col sm:flex-row lg:flex-col xl:flex-row justify-between items-center mt-8">

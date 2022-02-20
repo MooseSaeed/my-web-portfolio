@@ -33,7 +33,7 @@
 
                 <div class="card-info text-sm mt-2">
                     <p>
-                        {{ $post->excerpt }}
+                        {!! $post->excerpt !!}
                     </p>
                 </div>
 

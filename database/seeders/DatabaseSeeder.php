@@ -40,17 +40,17 @@ class DatabaseSeeder extends Seeder
         Post::factory(4)->create([
             'user_id' => $user,
             'category_id' => $frontend,
-            'thumbnail' => 'thumbnails/mKsUjgvkM1Jv2SbiOs6ODVSmQXLtyoq58CFHpwsX.jpg'
+            'thumbnail' => 'thumbnails/d2hICXMFwUgsOFerDvNrrzp7cqTcGaBLaeArEj9Z.jpg'
         ]);
         Post::factory(4)->create([
             'user_id' => $user,
             'category_id' => $backend,
-            'thumbnail' => 'thumbnails/mKsUjgvkM1Jv2SbiOs6ODVSmQXLtyoq58CFHpwsX.jpg'
+            'thumbnail' => 'thumbnails/d2hICXMFwUgsOFerDvNrrzp7cqTcGaBLaeArEj9Z.jpg'
         ]);
         Post::factory(4)->create([
             'user_id' => $user,
             'category_id' => $general,
-            'thumbnail' => 'thumbnails/mKsUjgvkM1Jv2SbiOs6ODVSmQXLtyoq58CFHpwsX.jpg'
+            'thumbnail' => 'thumbnails/d2hICXMFwUgsOFerDvNrrzp7cqTcGaBLaeArEj9Z.jpg'
         ]);
     }
 }
