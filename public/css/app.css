@@ -650,13 +650,6 @@ select{
   position: relative;
 }
 
-.inset-0{
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-
 .top-0{
   top: 0px;
 }
@@ -691,30 +684,6 @@ select{
 
 .col-span-8{
   grid-column: span 8 / span 8;
-}
-
-.col-span-2{
-  grid-column: span 2 / span 2;
-}
-
-.col-span-5{
-  grid-column: span 5 / span 5;
-}
-
-.col-span-1{
-  grid-column: span 1 / span 1;
-}
-
-.col-span-3{
-  grid-column: span 3 / span 3;
-}
-
-.col-span-7{
-  grid-column: span 7 / span 7;
-}
-
-.col-span-6{
-  grid-column: span 6 / span 6;
 }
 
 .col-start-5{
@@ -835,12 +804,12 @@ select{
   margin-top: 4rem;
 }
 
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .block{
@@ -901,14 +870,6 @@ select{
 
 .max-h-52{
   max-height: 13rem;
-}
-
-.max-h-1{
-  max-height: 0.25rem;
-}
-
-.max-h-px{
-  max-height: 1px;
 }
 
 .min-h-screen{
@@ -991,10 +952,6 @@ select{
   max-width: 28rem;
 }
 
-.max-w-xs{
-  max-width: 20rem;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1039,11 +996,6 @@ select{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-skew-y-12{
-  --tw-skew-y: -12deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .scale-95{
   --tw-scale-x: .95;
   --tw-scale-y: .95;
@@ -1053,18 +1005,6 @@ select{
 .scale-100{
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-125{
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-150{
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1101,62 +1041,6 @@ select{
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-@-webkit-keyframes ping{
-
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-@keyframes ping{
-
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping{
-  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@-webkit-keyframes bounce{
-
-  0%, 100%{
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-@keyframes bounce{
-
-  0%, 100%{
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce{
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
-}
-
 .cursor-default{
   cursor: default;
 }
@@ -1177,10 +1061,6 @@ select{
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-12{
-  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .grid-rows-2{
@@ -1436,6 +1316,10 @@ select{
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
 }
 
+.bg-blue-50\/30{
+  background-color: rgb(239 246 255 / 0.3);
+}
+
 .bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -1454,41 +1338,6 @@ select{
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-slate-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.bg-blue-50\/50{
-  background-color: rgb(239 246 255 / 0.5);
-}
-
-.bg-blue-50\/80{
-  background-color: rgb(239 246 255 / 0.8);
-}
-
-.bg-blue-50\/10{
-  background-color: rgb(239 246 255 / 0.1);
-}
-
-.bg-blue-50\/20{
-  background-color: rgb(239 246 255 / 0.2);
-}
-
-.bg-blue-50\/30{
-  background-color: rgb(239 246 255 / 0.3);
 }
 
 .bg-gradient-to-r{
@@ -1535,12 +1384,12 @@ select{
   --tw-gradient-to: #1e40af;
 }
 
-.to-purple-700{
-  --tw-gradient-to: #7e22ce;
-}
-
 .to-blue-300{
   --tw-gradient-to: #93c5fd;
+}
+
+.to-purple-700{
+  --tw-gradient-to: #7e22ce;
 }
 
 .bg-clip-text{
@@ -1704,10 +1553,6 @@ select{
 
 .pl-4{
   padding-left: 1rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
 }
 
 .text-left{
@@ -2003,6 +1848,12 @@ select{
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-colors{
   transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
@@ -2011,14 +1862,12 @@ select{
   transition-duration: 150ms;
 }
 
-.transition-all{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.duration-150{
   transition-duration: 150ms;
 }
 
-.duration-150{
-  transition-duration: 150ms;
+.duration-1000{
+  transition-duration: 1000ms;
 }
 
 .duration-300{
@@ -2035,10 +1884,6 @@ select{
 
 .duration-500{
   transition-duration: 500ms;
-}
-
-.duration-1000{
-  transition-duration: 1000ms;
 }
 
 .ease-in-out{
@@ -2102,38 +1947,6 @@ select{
   outline-offset: 2px;
 }
 
-@keyframes pulse{
-
-  50%{
-    opacity: .5;
-  }
-}
-
-.hover\:animate-pulse:hover{
-  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes bounce{
-
-  0%, 100%{
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.hover\:animate-bounce:hover{
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
-}
-
 .hover\:border-gray-300:hover{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2146,11 +1959,6 @@ select{
 .hover\:bg-blue-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-50:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-100:hover{
@@ -2176,60 +1984,6 @@ select{
 .hover\:bg-gray-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-50\/50:hover{
-  background-color: rgb(239 246 255 / 0.5);
-}
-
-.hover\:bg-blue-800\/50:hover{
-  background-color: rgb(30 64 175 / 0.5);
-}
-
-.hover\:bg-blue-900\/50:hover{
-  background-color: rgb(30 58 138 / 0.5);
-}
-
-.hover\:bg-blue-500\/50:hover{
-  background-color: rgb(59 130 246 / 0.5);
-}
-
-.hover\:bg-blue-400\/50:hover{
-  background-color: rgb(96 165 250 / 0.5);
-}
-
-.hover\:bg-blue-300\/50:hover{
-  background-color: rgb(147 197 253 / 0.5);
-}
-
-.hover\:bg-blue-200\/50:hover{
-  background-color: rgb(191 219 254 / 0.5);
-}
-
-.hover\:bg-blue-200\/25:hover{
-  background-color: rgb(191 219 254 / 0.25);
-}
-
-.hover\:bg-blue-200\/10:hover{
-  background-color: rgb(191 219 254 / 0.1);
-}
-
-.hover\:bg-blue-50\/10:hover{
-  background-color: rgb(239 246 255 / 0.1);
-}
-
-.hover\:bg-blue-50\/75:hover{
-  background-color: rgb(239 246 255 / 0.75);
-}
-
-.hover\:bg-blue-100:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-white:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-bl:hover{
@@ -2278,15 +2032,6 @@ select{
 .hover\:text-red-600:hover{
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.hover\:duration-1000:hover{
-  transition-duration: 1000ms;
 }
 
 .focus\:z-10:focus{
