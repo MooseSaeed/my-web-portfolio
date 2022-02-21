@@ -2124,6 +2124,11 @@ select{
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .focus\:z-10:focus{
   z-index: 10;
 }
