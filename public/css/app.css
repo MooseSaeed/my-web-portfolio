@@ -903,6 +903,14 @@ select{
   max-height: 13rem;
 }
 
+.max-h-1{
+  max-height: 0.25rem;
+}
+
+.max-h-px{
+  max-height: 1px;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -981,6 +989,10 @@ select{
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-xs{
+  max-width: 20rem;
 }
 
 .flex-1{
@@ -1087,6 +1099,27 @@ select{
 .animate-pulse{
   -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@-webkit-keyframes ping{
+
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ping{
+
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-default{
@@ -1616,6 +1649,10 @@ select{
 
 .pl-4{
   padding-left: 1rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-left{

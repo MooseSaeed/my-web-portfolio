@@ -21,41 +21,50 @@
 
 <body id="app" style="font-family: Open Sans, sans-serif" class="scroll-smooth">
 
-    <div class="
+    <div
+        class="
     {{-- bg-option1 --}}
     {{-- bg-option2 --}}
+    {{-- bg-option3 --}}
+    {{-- bg-option4 --}}
+    {{-- bg-option5 --}}
+    bg-option6
     ">
-        <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-700">
-            <nav
-                class="grid grid-rows-2 py-3 px-10 bg-white gap-4 justify-center items-center md:flex md:justify-between md:items-center">
-                <div class="justify-self-center">
-                    <a href="/">
-                        {{-- <x-svg-logo /> --}}
-                        <x-svg-logo-dark />
-                    </a>
-                </div>
-                <div class="flex flex-col gap-2 md:block items-center justify-center">
-                    @auth
-                        <div
-                            class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
-                            <x-admin-dropdown />
-                            </Dropdown>
-                        </div>
-                    @endauth
-                    <a href="#newsletter">
-                        <button href="#newsletter"
-                            class="demogardNewsletter transition duration-300 font-semibold
+
+        <nav
+            class="grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
+            <div class="justify-self-center">
+                <a href="/">
+                    {{-- <x-svg-logo /> --}}
+                    <x-svg-logo-dark />
+                </a>
+            </div>
+            <div class="flex flex-col gap-2 md:block items-center justify-center">
+                @auth
+                    <div
+                        class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
+                        <x-admin-dropdown />
+                        </Dropdown>
+                    </div>
+                @endauth
+                <a href="#newsletter">
+                    <button href="#newsletter"
+                        class="demogardNewsletter transition duration-300 font-semibold
                             bg-gradient-to-r from-purple-600 to-blue-500
                             hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
                            text-white rounded-full ml-1 py-3 px-7 text-sm">
-                            Subscribe for Updates
-                        </button>
-                    </a>
-                </div>
-            </nav>
+                        Subscribe for Updates
+                    </button>
+                </a>
+            </div>
+        </nav>
+        <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-700 animate-pulse">
         </div>
+
         <section class="px-6 pb-6 pt-2">
+
             <main class="max-w-6xl mx-auto mt-6 lg:mt-10 space-y-6">
+
                 {{ $slot }}
             </main>
             <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
