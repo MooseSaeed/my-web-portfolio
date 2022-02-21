@@ -1,4 +1,4 @@
-<header class="max-w-xl mx-auto mt-10 text-center">
+<header class="max-w-xl mx-auto mt-10 text-center ">
     <h1 class="text-4xl">
         <span class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 px-2 py-1 rounded-xl text-white">
             Code is Puppet</span>

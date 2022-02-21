@@ -13,90 +13,88 @@
     <meta property="og:url" content="https://" />
     <title>Hands On Tech Blog</title>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" />
-    <link rel="stylesheet" href="/override.css" />
-    <link rel="stylesheet" href="/cardhover.css" />
+    <link rel="stylesheet" href="{{ asset('/override.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/cardhover.css') }}" />
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
 
 <body id="app" style="font-family: Open Sans, sans-serif" class="scroll-smooth">
 
-    <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-700">
-        <nav class="grid grid-rows-2 py-3 px-10 bg-white gap-4 justify-center items-center md:flex md:justify-between md:items-center">
-
-            <div class="justify-self-center">
-                <a href="/">
-                    <x-svg-logo />
-                </a>
-            </div>
-
-            <div class="flex flex-col gap-2 md:block items-center justify-center">
-                @auth
-
-                <div class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
-
-                    <x-admin-dropdown />
-
-                    </Dropdown>
-
+    <div class="
+    {{-- bg-option1 --}}
+    {{-- bg-option2 --}}
+    ">
+        <div class="pb-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-700">
+            <nav
+                class="grid grid-rows-2 py-3 px-10 bg-white gap-4 justify-center items-center md:flex md:justify-between md:items-center">
+                <div class="justify-self-center">
+                    <a href="/">
+                        {{-- <x-svg-logo /> --}}
+                        <x-svg-logo-dark />
+                    </a>
                 </div>
-                @endauth
-                <a href="#newsletter">
-                    <button href="#newsletter" class="demogardNewsletter transition duration-300 font-semibold 
-                        bg-gradient-to-r from-purple-600 to-blue-500
-                        hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
-                       text-white rounded-full ml-1 py-3 px-7 text-sm">
-                        Subscribe for Updates
-                    </button>
-                </a>
+                <div class="flex flex-col gap-2 md:block items-center justify-center">
+                    @auth
+                        <div
+                            class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
+                            <x-admin-dropdown />
+                            </Dropdown>
+                        </div>
+                    @endauth
+                    <a href="#newsletter">
+                        <button href="#newsletter"
+                            class="demogardNewsletter transition duration-300 font-semibold
+                            bg-gradient-to-r from-purple-600 to-blue-500
+                            hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
+                           text-white rounded-full ml-1 py-3 px-7 text-sm">
+                            Subscribe for Updates
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <section class="px-6 pb-6 pt-2">
+            <main class="max-w-6xl mx-auto mt-6 lg:mt-10 space-y-6">
+                {{ $slot }}
+            </main>
+            <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
+                <footer class="flex flex-col justify-center items-center bg-blue-50 text-center py-16 px-10 rounded-xl">
+                    <img class="newsletterlogo" src="/images/My-Logo-Newsletter.png" width="220px"
+                        class="mb-3" alt="" />
+                    <h5 class="text-3xl">Subscribe to my newsletter and stay up to date.</h5>
+                    <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>
+                    <div id="newsletter" class="mt-10">
+                        <div class="relative inline-block mx-auto bg-blue-100 rounded-full">
+                            <form method="POST" action="/newsletter" class="sm:flex text-sm">
+                                @csrf
+                                <div class="py-1 px-3 flex items-center">
+                                    <label for="email" class="inline-block">
+                                        <img src="/images/mailbox-icon.svg" alt="mailbox letter" />
+                                    </label>
+                                    <input id="email" name="email" type="text" placeholder="Your email address"
+                                        class="bg-transparent text-center sm:text-left py-1 pl-3 md:py-2 md:pl-4 focus-within:outline-none outline-none border-none" />
+                                    @error('email')
+                                        <span class="text-xs text-red-500">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <button href="#newsletter"
+                                    class="demogardNewsletterbutton transition duration-300 font-semibold
+                            bg-gradient-to-r from-purple-600 to-blue-500
+                            hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
+                           text-white rounded-full ml-1 py-1 px-6 text-sm">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </nav>
+        </section>
     </div>
 
-    <section class="px-6 pb-6 pt-2">
-
-        <main class="max-w-6xl mx-auto mt-6 lg:mt-10 space-y-6">
-
-            {{ $slot }}
-
-        </main>
-        <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
-            <footer class="flex flex-col justify-center items-center bg-blue-50 text-center py-16 px-10 rounded-xl">
-                <img class="newsletterlogo" src="/images/My-Logo-Newsletter.png" width="220px" class="mb-3" alt="" />
-
-                <h5 class="text-3xl">Subscribe to my newsletter and stay up to date.</h5>
-                <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>
-
-                <div id="newsletter" class="mt-10">
-                    <div class="relative inline-block mx-auto bg-blue-100 rounded-full">
-                        <form method="POST" action="/newsletter" class="sm:flex text-sm">
-                            @csrf
-                            <div class="py-1 px-3 flex items-center">
-                                <label for="email" class="inline-block">
-                                    <img src="/images/mailbox-icon.svg" alt="mailbox letter" />
-                                </label>
-
-                                <input id="email" name="email" type="text" placeholder="Your email address" class="bg-transparent text-center sm:text-left py-1 pl-3 md:py-2 md:pl-4 focus-within:outline-none outline-none border-none" />
-                                @error('email')
-                                <span class="text-xs text-red-500">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-                            <button href="#newsletter" class="demogardNewsletterbutton transition duration-300 font-semibold 
-                        bg-gradient-to-r from-purple-600 to-blue-500
-                        hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
-                       text-white rounded-full ml-1 py-1 px-6 text-sm">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </section>
-
     @if (session()->has('success'))
-    <Flashmessage message="{{ session('success') }}" />
+        <Flashmessage message="{{ session('success') }}" />
     @endif
 
 </body>
