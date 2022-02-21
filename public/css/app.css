@@ -1122,6 +1122,41 @@ select{
           animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+@-webkit-keyframes bounce{
+
+  0%, 100%{
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce{
+
+  0%, 100%{
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce{
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
 .cursor-default{
   cursor: default;
 }
@@ -1951,6 +1986,12 @@ select{
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-150{
   transition-duration: 150ms;
 }
@@ -1969,6 +2010,10 @@ select{
 
 .duration-500{
   transition-duration: 500ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
 }
 
 .ease-in-out{
@@ -2032,6 +2077,38 @@ select{
   outline-offset: 2px;
 }
 
+@keyframes pulse{
+
+  50%{
+    opacity: .5;
+  }
+}
+
+.hover\:animate-pulse:hover{
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes bounce{
+
+  0%, 100%{
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.hover\:animate-bounce:hover{
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
 .hover\:border-gray-300:hover{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2074,6 +2151,60 @@ select{
 .hover\:bg-gray-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-50\/50:hover{
+  background-color: rgb(239 246 255 / 0.5);
+}
+
+.hover\:bg-blue-800\/50:hover{
+  background-color: rgb(30 64 175 / 0.5);
+}
+
+.hover\:bg-blue-900\/50:hover{
+  background-color: rgb(30 58 138 / 0.5);
+}
+
+.hover\:bg-blue-500\/50:hover{
+  background-color: rgb(59 130 246 / 0.5);
+}
+
+.hover\:bg-blue-400\/50:hover{
+  background-color: rgb(96 165 250 / 0.5);
+}
+
+.hover\:bg-blue-300\/50:hover{
+  background-color: rgb(147 197 253 / 0.5);
+}
+
+.hover\:bg-blue-200\/50:hover{
+  background-color: rgb(191 219 254 / 0.5);
+}
+
+.hover\:bg-blue-200\/25:hover{
+  background-color: rgb(191 219 254 / 0.25);
+}
+
+.hover\:bg-blue-200\/10:hover{
+  background-color: rgb(191 219 254 / 0.1);
+}
+
+.hover\:bg-blue-50\/10:hover{
+  background-color: rgb(239 246 255 / 0.1);
+}
+
+.hover\:bg-blue-50\/75:hover{
+  background-color: rgb(239 246 255 / 0.75);
+}
+
+.hover\:bg-blue-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-bl:hover{
@@ -2127,6 +2258,10 @@ select{
 .hover\:text-black:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:duration-1000:hover{
+  transition-duration: 1000ms;
 }
 
 .focus\:z-10:focus{

@@ -29,10 +29,11 @@
     {{-- bg-option4 --}}
     {{-- bg-option5 --}}
     bg-option6
+    {{-- bg-option7 --}}
     ">
 
         <nav
-            class="grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
+            class="bg-option7 grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
             <div class="justify-self-center">
                 <a href="/">
                     {{-- <x-svg-logo /> --}}
@@ -68,9 +69,9 @@
                 {{ $slot }}
             </main>
             <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
-                <footer class="flex flex-col justify-center items-center bg-blue-50 text-center py-16 px-10 rounded-xl">
-                    <img class="newsletterlogo" src="/images/My-Logo-Newsletter.png" width="220px"
-                        class="mb-3" alt="" />
+                <footer
+                    class="text-white flex flex-col justify-center items-center bg-option7 text-center py-16 px-10 rounded-xl">
+                    <x-svg-logo-newsletter-dark />
                     <h5 class="text-3xl">Subscribe to my newsletter and stay up to date.</h5>
                     <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>
                     <div id="newsletter" class="mt-10">
