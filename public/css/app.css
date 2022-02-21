@@ -1471,6 +1471,26 @@ select{
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.bg-blue-50\/50{
+  background-color: rgb(239 246 255 / 0.5);
+}
+
+.bg-blue-50\/80{
+  background-color: rgb(239 246 255 / 0.8);
+}
+
+.bg-blue-50\/10{
+  background-color: rgb(239 246 255 / 0.1);
+}
+
+.bg-blue-50\/20{
+  background-color: rgb(239 246 255 / 0.2);
+}
+
+.bg-blue-50\/30{
+  background-color: rgb(239 246 255 / 0.3);
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1876,6 +1896,11 @@ select{
 
 .text-transparent{
   color: transparent;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline{

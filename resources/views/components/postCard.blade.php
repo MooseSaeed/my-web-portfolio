@@ -1,5 +1,5 @@
 <article id="post-card" class="text-white transition-colors py-6 px-5 flex flex-col justify-between transition-colors duration-300 
-hover:bg-blue-50 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
+ border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
     <div>
         <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="Blog Post illustration" class="rounded-xl" />
     </div>

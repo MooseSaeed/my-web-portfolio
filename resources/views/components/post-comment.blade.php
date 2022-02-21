@@ -1,6 +1,6 @@
 @props(['comment'])
 
-<article class="flex bg-blue-50 p-6 rounded-xl border border-blue-100 space-x-4">
+<article class="flex bg-blue-50/30 p-6 rounded-xl border border-blue-100 space-x-4">
 
     <div class="flex-shrink-0 ">
         <img src="https://i.pravatar.cc/60?u={{ $comment->id }}" width="60" height="60" class="rounded-xl" alt="">

@@ -16,7 +16,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-8">
+                <div class="col-span-8 text-white">
 
                     <div class="hidden lg:flex justify-between mb-6">
                         <a href="/"
