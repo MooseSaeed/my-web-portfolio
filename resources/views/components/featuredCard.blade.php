@@ -2,7 +2,7 @@
 
 <card class="rounded-xl">
     <article id="post-card"
-        class="text-white transition-all transition-colors duration-1000 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
+        class="text-white transition-all duration-1000 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
         <div class="py-6 px-5 lg:flex">
             <div class="flex-1 lg:mr-8">
                 <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="Blog Post illustration"
@@ -14,7 +14,7 @@
 
                     <div class="mt-4 card-info">
                         <a href="/posts/{{ $post->slug }}">
-                            <h1 class="text-3xl">
+                            <h1 class="text-3xl font-bold">
                                 {{ $post->title }}
                             </h1>
                         </a>
