@@ -12,8 +12,8 @@
     </h2>
 
     <p class="text-sm mt-5 text-white">
-        Come'on in and check out my latest blog posts. I'm sharing whatever on
-        my mind and my mind is full of useful stuff for you'all.
+        I like to consider code as puppets and we're the puppeteers, so join me
+        and learn how to make your code do exactly what you want.
     </p>
 
 
@@ -33,13 +33,10 @@
             <form method="GET" action="#" class="">
                 <div class="flex justify-between items-center text-center">
                     @if (request('category'))
-                        <input type="hidden" name="category" value="{{ request('category') }}">
+                    <input type="hidden" name="category" value="{{ request('category') }}">
                     @endif
-                    <input type="text" name="search" placeholder="Looking for something?"
-                        value="{{ request('search') }}"
-                        class="shadow-none w-full focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
-                    <button type="submit"
-                        class="transition-colors duration-300 bg-gradient-to-r hover:to-blue-900 hover:from-blue-500  from-blue-400 to-blue-800 text-white m-1 rounded-xl text-xs font-semibold uppercase py-2 px-6">
+                    <input type="text" name="search" placeholder="Looking for something?" value="{{ request('search') }}" class="shadow-none w-full focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
+                    <button type="submit" class="transition-colors duration-300 bg-gradient-to-r hover:to-blue-900 hover:from-blue-500  from-blue-400 to-blue-800 text-white m-1 rounded-xl text-xs font-semibold uppercase py-2 px-6">
                         Search
                     </button>
 
