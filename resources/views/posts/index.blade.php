@@ -3,12 +3,12 @@
     @include('posts.__header')
 
     @if ($posts->count())
-        @if ($posts->currentPage() == 1)
+        @if ($posts->onFirstPage())
             <x-featuredCard :post="$posts[0]" />
         @endif
         @if ($posts->count() > 1)
 
-            @if ($posts->currentPage() == 1)
+            @if ($posts->onFirstPage())
                 <div class="lg:grid lg:grid-cols-2">
 
                     <x-postCard :post="$posts[1]" />
@@ -18,7 +18,7 @@
             @endif
 
             <div class="lg:grid lg:grid-cols-3">
-                @foreach ($posts->skip($posts->currentPage() == 1 ? 3 : 0) as $post)
+                @foreach ($posts->skip($posts->onFirstPage() ? 3 : 0) as $post)
                     <x-postCard :post="$post" />
                 @endforeach
             </div>
