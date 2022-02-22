@@ -28,7 +28,7 @@
         {{ $posts->links() }}
 
     @else
-        <p class="text-center">No posts matches your search, please check back later</p>
+        <p class="text-center text-white">No posts matches your search, please check back later</p>
     @endif
 
 </x-bloglayout>
