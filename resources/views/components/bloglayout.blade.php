@@ -28,18 +28,22 @@
     {{-- bg-option3 --}}
     {{-- bg-option4 --}}
     {{-- bg-option5 --}}
+    {{-- bg-option6 --}}
     bg-option6
+    dark:bg-white
+    dark:bg-none
     {{-- bg-option7 --}}
     ">
 
         <nav
-            class="bg-option7 grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
+            class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
             <div class="justify-self-center">
                 <a href="/">
                     {{-- <x-svg-logo /> --}}
                     <x-svg-logo-dark />
                 </a>
             </div>
+
             <div class="flex flex-col gap-2 md:block items-center justify-center">
                 @auth
                     <div
@@ -70,7 +74,7 @@
             </main>
             <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
                 <footer
-                    class="text-white flex flex-col justify-center items-center bg-option7 text-center py-16 px-10 rounded-xl">
+                    class="text-white dark:text-black flex flex-col justify-center items-center bg-option7 dark:bg-none dark:bg-white text-center py-16 px-10 rounded-xl">
                     <x-svg-logo-newsletter-dark />
                     <h5 class="text-3xl">Subscribe to my newsletter and stay up to date.</h5>
                     <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>

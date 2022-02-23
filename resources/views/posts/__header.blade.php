@@ -1,7 +1,7 @@
 <header class="max-w-xl mx-auto mt-10 text-center ">
 
-    <h1 class="text-4xl text-white">
-        <span class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 px-2 py-1 rounded-xl text-white">
+    <h1 class="text-4xl text-white dark:text-black ">
+        <span class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 px-2 py-1 rounded-xl text-white ">
             Code is Puppet</span>
         blog
     </h1>
@@ -11,7 +11,7 @@
         <img class="wavingHand" src="/images/wavinghand.png" width="35px" alt="Waving Hand" />
     </h2>
 
-    <p class="text-sm mt-5 text-white">
+    <p class="text-sm mt-5 text-white dark:text-black">
         I like to consider code as puppets and we're the puppeteers, so join me
         and learn how to make your code do exactly what you want.
     </p>
