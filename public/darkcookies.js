@@ -22,12 +22,6 @@ function getCookie(cname) {
     return "";
 }
 
-function myFunction() {
-    var element = document.body;
-    const isDarkModeOn = element.classList.toggle("dark");
-    createCookie("isDarkModeOn", isDarkModeOn.toString(), 60 * 60 * 24); // 1 day expiry date
-}
-
 window.onload = function () {
     const isDarkModeOn = getCookie("isDarkModeOn");
     if (isDarkModeOn === "true") document.body.classList.add("dark");

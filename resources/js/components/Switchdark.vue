@@ -4,12 +4,12 @@
         @click="modeToggle"
     >
         <div
-            class="flex h-10 w-16 items-center rounded-full bg-gray-300 p-1 duration-300 ease-in-out"
+            class="flex h-4 w-12 items-center rounded-full bg-gray-300 p-1 duration-300 ease-in-out"
             :class="{ 'bg-green-400': toggleActive }"
         >
             <div
-                class="h-8 w-8 transform rounded-full bg-white shadow-md duration-300 ease-in-out"
-                :class="{ 'translate-x-6': toggleActive }"
+                class="h-3 w-3 transform rounded-full bg-white shadow-md duration-300 ease-in-out"
+                :class="{ 'translate-x-7': toggleActive }"
             ></div>
         </div>
     </div>

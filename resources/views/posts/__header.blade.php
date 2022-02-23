@@ -6,7 +6,7 @@
         blog
     </h1>
 
-    <h2 class="text-white inline-flex mt-3 items-center">
+    <h2 class="dark:text-black text-white inline-flex mt-3 items-center">
         By Mostafa Said
         <img class="wavingHand" src="/images/wavinghand.png" width="35px" alt="Waving Hand" />
     </h2>

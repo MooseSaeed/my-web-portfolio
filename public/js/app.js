@@ -25034,12 +25034,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $options.modeToggle && $options.modeToggle.apply($options, arguments);
     })
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["flex h-10 w-16 items-center rounded-full bg-gray-300 p-1 duration-300 ease-in-out", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["flex h-4 w-12 items-center rounded-full bg-gray-300 p-1 duration-300 ease-in-out", {
       'bg-green-400': $data.toggleActive
     }])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-8 w-8 transform rounded-full bg-white shadow-md duration-300 ease-in-out", {
-      'translate-x-6': $data.toggleActive
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-3 w-3 transform rounded-full bg-white shadow-md duration-300 ease-in-out", {
+      'translate-x-7': $data.toggleActive
     }])
   }, null, 2
   /* CLASS */
