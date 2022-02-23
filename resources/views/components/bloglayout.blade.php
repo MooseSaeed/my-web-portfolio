@@ -18,7 +18,8 @@
 </head>
 
 
-<body id="app" style="font-family: Open Sans, sans-serif" class="scroll-smooth">
+<body id="app" style="font-family: Open Sans, sans-serif"
+    class="scroll-smooth {{ $_COOKIE['isDarkModeOn'] === 'true' ? 'dark' : '' }}">
 
     <div
         class="
@@ -34,6 +35,8 @@
     {{-- bg-option7 --}}
     ">
 
+
+
         <nav
             class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
             <div class="justify-self-center">
@@ -44,7 +47,7 @@
             </div>
 
             <div>
-                <Switchdark />
+                <Switchdark theme="{{ $_COOKIE['isDarkModeOn'] === 'true' ? 'true' : 'false' }}" />
             </div>
 
             <div class="flex flex-col gap-2 md:block items-center justify-center">

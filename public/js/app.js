@@ -24809,16 +24809,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ["theme"],
   data: function data() {
     return {
       toggleActive: false
     };
   },
-  beforeUnmount: function beforeUnmount() {
-    if (this.darkMode || document.querySelector("body").classList.contains("dark")) {
-      this.dark();
-    } else {
+  mounted: function mounted() {
+    if (this.theme === "false") {
       this.light();
+    } else {
+      this.dark();
     }
   },
   methods: {

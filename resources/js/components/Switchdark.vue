@@ -17,19 +17,17 @@
 
 <script>
 export default {
+    props: ["theme"],
     data() {
         return {
             toggleActive: false,
         };
     },
-    beforeUnmount() {
-        if (
-            this.darkMode ||
-            document.querySelector("body").classList.contains("dark")
-        ) {
-            this.dark();
-        } else {
+    mounted() {
+        if (this.theme === "false") {
             this.light();
+        } else {
+            this.dark();
         }
     },
     methods: {

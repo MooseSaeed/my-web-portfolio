@@ -30,6 +30,5 @@ function myFunction() {
 
 window.onload = function () {
     const isDarkModeOn = getCookie("isDarkModeOn");
-    if (isDarkModeOn === "true")
-        document.querySelector("body").classList.add("dark");
+    if (isDarkModeOn === "true") document.body.classList.add("dark");
 };
