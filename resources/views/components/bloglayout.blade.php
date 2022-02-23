@@ -21,6 +21,12 @@
 
 <body id="app" style="font-family: Open Sans, sans-serif" class="scroll-smooth">
 
+    @if (Cookie::get('isDarkModeOn') !== null)
+        <p>cookie is set</p>
+    @else
+        <p>cookie isn't set</p>
+    @endif
+
     <div
         class="
     {{-- bg-option1 --}}
@@ -42,6 +48,10 @@
                     {{-- <x-svg-logo /> --}}
                     <x-svg-logo-dark />
                 </a>
+            </div>
+
+            <div>
+                <Switchdark />
             </div>
 
             <div class="flex flex-col gap-2 md:block items-center justify-center">
