@@ -15,17 +15,10 @@
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" />
     <link rel="stylesheet" href="{{ asset('/override.css') }}" />
     <link rel="stylesheet" href="{{ asset('/cardhover.css') }}" />
-    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
 
 <body id="app" style="font-family: Open Sans, sans-serif" class="scroll-smooth">
-
-    @if (Cookie::get('isDarkModeOn') !== null)
-        <p>cookie is set</p>
-    @else
-        <p>cookie isn't set</p>
-    @endif
 
     <div
         class="
@@ -120,7 +113,8 @@
     @if (session()->has('success'))
         <Flashmessage message="{{ session('success') }}" />
     @endif
-
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('/darkcookies.js') }}" defer></script>
 </body>
 
 </html>

@@ -22,6 +22,16 @@ export default {
             toggleActive: false,
         };
     },
+    beforeUnmount() {
+        if (
+            this.darkMode ||
+            document.querySelector("body").classList.contains("dark")
+        ) {
+            this.dark();
+        } else {
+            this.light();
+        }
+    },
     methods: {
         dark() {
             document.querySelector("body").classList.add("dark");
@@ -43,6 +53,8 @@ export default {
             } else {
                 this.dark();
             }
+            const isDarkModeOn = this.toggleActive;
+            createCookie("isDarkModeOn", isDarkModeOn.toString(), 60 * 60 * 24);
         },
     },
 };

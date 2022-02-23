@@ -24814,6 +24814,13 @@ __webpack_require__.r(__webpack_exports__);
       toggleActive: false
     };
   },
+  beforeUnmount: function beforeUnmount() {
+    if (this.darkMode || document.querySelector("body").classList.contains("dark")) {
+      this.dark();
+    } else {
+      this.light();
+    }
+  },
   methods: {
     dark: function dark() {
       document.querySelector("body").classList.add("dark");
@@ -24831,6 +24838,9 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         this.dark();
       }
+
+      var isDarkModeOn = this.toggleActive;
+      createCookie("isDarkModeOn", isDarkModeOn.toString(), 60 * 60 * 24);
     }
   }
 });
