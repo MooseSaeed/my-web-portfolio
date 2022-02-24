@@ -15,6 +15,7 @@ import Flashmessage from "./components/Flashmessage";
 import Card from "./components/Card";
 import Switchdark from "./components/darkcomponents/Switchdark";
 import Svglogodark from "./components/darkcomponents/Svglogodark";
+import Svgnewsletterdark from "./components/darkcomponents/Svgnewsletterdark";
 
 createApp({
     components: {
@@ -25,6 +26,7 @@ createApp({
         Card,
         Switchdark,
         Svglogodark,
+        Svgnewsletterdark,
     },
 })
     .use(vClickOutside)

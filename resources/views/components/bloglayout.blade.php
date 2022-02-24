@@ -81,7 +81,11 @@
             <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
                 <footer
                     class="text-white dark:text-black flex flex-col justify-center items-center bg-option7 dark:bg-none dark:bg-white text-center py-16 px-10 rounded-xl">
-                    <x-svg-logo-newsletter-dark />
+
+                    <div>
+                        <Svgnewsletterdark />
+                    </div>
+
                     <h5 class="text-3xl">Subscribe to my newsletter and stay up to date.</h5>
                     <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>
                     <div id="newsletter" class="mt-10">
