@@ -19,9 +19,23 @@
     <script src="{{ asset('/darkcookies.js') }}" defer></script>
 </head>
 
+{{-- I guess no harm done here
+Identifying the cookie value before body loads to prevent unidentified errors --}}
+
+<?php
+
+if (isset($_COOKIE['isDarkModeOn'])) {
+    $cookie = $_COOKIE['isDarkModeOn'];
+} else {
+    $cookie = '';
+}
+
+?>
+
+{{-- Echo dark or echo nothing to prevent flash of incorrect theme --}}
 
 <body id="app" style="font-family: Open Sans, sans-serif"
-    class="scroll-smooth {{ $_COOKIE['isDarkModeOn'] === 'true' ? 'dark' : '' }}">
+    class="scroll-smooth {{ $cookie === 'false' ? '' : 'dark' }}">
 
     <div
         class="
@@ -41,13 +55,12 @@
             class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
             <div class="justify-self-center">
                 <a href="/">
-                    {{-- <x-svg-logo /> --}}
                     <Svglogodark />
                 </a>
             </div>
 
             <div>
-                <Switchdark theme="{{ $_COOKIE['isDarkModeOn'] === 'true' ? 'true' : 'false' }}" />
+                <Switchdark theme="{{ $cookie === 'true' ? 'true' : 'false' }}" />
             </div>
 
             <div class="flex flex-col gap-2 md:block items-center justify-center">
