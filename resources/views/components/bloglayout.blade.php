@@ -24,11 +24,7 @@ Identifying the cookie value before body loads to prevent unidentified errors --
 
 <?php
 
-if (isset($_COOKIE['isDarkModeOn'])) {
-    $cookie = $_COOKIE['isDarkModeOn'];
-} else {
-    $cookie = '';
-}
+$cookie = $_COOKIE['isDarkModeOn'] ?? '';
 
 ?>
 
@@ -37,18 +33,10 @@ if (isset($_COOKIE['isDarkModeOn'])) {
 <body id="app" style="font-family: Open Sans, sans-serif"
     class="scroll-smooth {{ $cookie === 'false' ? '' : 'dark' }}">
 
-    <div
-        class="
-    {{-- bg-option1 --}}
-    {{-- bg-option2 --}}
-    {{-- bg-option3 --}}
-    {{-- bg-option4 --}}
-    {{-- bg-option5 --}}
-    {{-- bg-option6 --}}
+    <div class="
     bg-option6
     dark:bg-white
     dark:bg-none
-    {{-- bg-option7 --}}
     ">
 
         <nav
