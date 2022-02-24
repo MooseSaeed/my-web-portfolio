@@ -13,7 +13,8 @@ import Dropdownitems from "./components/categories/Dropdownitems";
 import vClickOutside from "click-outside-vue3";
 import Flashmessage from "./components/Flashmessage";
 import Card from "./components/Card";
-import Switchdark from "./components/Switchdark";
+import Switchdark from "./components/darkcomponents/Switchdark";
+import Svglogodark from "./components/darkcomponents/Svglogodark";
 
 createApp({
     components: {
@@ -23,6 +24,7 @@ createApp({
         Flashmessage,
         Card,
         Switchdark,
+        Svglogodark,
     },
 })
     .use(vClickOutside)

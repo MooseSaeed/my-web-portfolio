@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" />
     <link rel="stylesheet" href="{{ asset('/override.css') }}" />
     <link rel="stylesheet" href="{{ asset('/cardhover.css') }}" />
+    <script src="{{ asset('/js/app.js') }}" defer></script>
+    <script src="{{ asset('/darkcookies.js') }}" defer></script>
 </head>
 
 
@@ -35,14 +37,12 @@
     {{-- bg-option7 --}}
     ">
 
-
-
         <nav
             class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
             <div class="justify-self-center">
                 <a href="/">
                     {{-- <x-svg-logo /> --}}
-                    <x-svg-logo-dark />
+                    <Svglogodark />
                 </a>
             </div>
 
@@ -116,8 +116,7 @@
     @if (session()->has('success'))
         <Flashmessage message="{{ session('success') }}" />
     @endif
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('/darkcookies.js') }}" defer></script>
+
 </body>
 
 </html>
