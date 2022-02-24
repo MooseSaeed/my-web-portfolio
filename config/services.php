@@ -35,6 +35,9 @@ return [
         'lists' => [
             'subscribers' => env('MAILCHIMP_LIST_SUBSCRIBERS')
         ]
+    ],
+    'devto' => [
+        'key' => env('DEV_TO_KEY'),
     ]
 
 ];
