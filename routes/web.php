@@ -21,7 +21,6 @@ route::get('ping', function () {
 
     ddd($response);
 });
-//23vHQjJkzSq1TcsdTJEgkFFT
 
 /* Showing homepage and posts */
 
