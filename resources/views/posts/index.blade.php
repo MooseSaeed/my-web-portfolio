@@ -21,9 +21,6 @@
                 @foreach ($posts->skip($posts->onFirstPage() ? 3 : 0) as $post)
                     <x-postCard :post="$post" />
                 @endforeach
-                @foreach ($articles as $article)
-                    <x-articlepostcard :article="$article" />
-                @endforeach
             </div>
 
         @endif
