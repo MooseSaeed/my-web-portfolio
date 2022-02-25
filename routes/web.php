@@ -8,19 +8,11 @@ use App\Http\Controllers\Postcontroller;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
+route::get('/playground', function () {
 
-//playing with Dev.to API
-
-route::get('ping', function () {
-
-    $response = Http::withHeaders([
-        'api-key' => config('services.devto.key')
-    ])->get('http://dev.to/api/articles/me/published');
-
-    $response = json_decode($response, true);
-
-    ddd($response);
+    return view('playground');
 });
+
 
 /* Showing homepage and posts */
 
