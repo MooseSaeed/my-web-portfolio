@@ -2,6 +2,11 @@
 
     @include('posts.__header')
 
+
+    @if ($posts->onFirstPage())
+        <x-DevtoCard :post="$posts[0]" />
+    @endif
+
     @if ($posts->count())
         @if ($posts->onFirstPage())
             <x-featuredCard :post="$posts[0]" />
