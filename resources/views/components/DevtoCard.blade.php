@@ -8,6 +8,14 @@
     </h1>
 
 
-    <Swiperslides />
+    <Swiperslides>
+        @foreach ($articles as $article)
+            <Swiperslidescontent thumbnail="{{ $article->thumbnail }}" canonical_url="{{ $article->canonical_url }}"
+                title="{{ $article->title }}" created_at="{{ $article->created_at }}"
+                excerpt="{{ $article->excerpt }}">
+            </Swiperslidescontent>
+        @endforeach
+
+    </Swiperslides>
 
 </article>

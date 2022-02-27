@@ -17,6 +17,7 @@ import Switchdark from "./components/darkcomponents/Switchdark";
 import Svglogodark from "./components/darkcomponents/Svglogodark";
 import Svgnewsletterdark from "./components/darkcomponents/Svgnewsletterdark";
 import Swiperslides from "./components/devto/Swiperslides";
+import Swiperslidescontent from "./components/devto/Swiperslidescontent";
 
 createApp({
     components: {
@@ -29,6 +30,7 @@ createApp({
         Svglogodark,
         Svgnewsletterdark,
         Swiperslides,
+        Swiperslidescontent,
     },
 })
     .use(vClickOutside)

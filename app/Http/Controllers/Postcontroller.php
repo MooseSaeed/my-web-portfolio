@@ -35,26 +35,6 @@ class Postcontroller extends Controller
             );
         }
 
-        /*         foreach (Post::all() as $post) {
-            $articleCollection->push(
-                new ArticlesData(
-                    $post->id,
-                    $post->user_id,
-                    $post->category_id,
-                    $post->title,
-                    $post->excerpt,
-                    $post->created_at,
-                    $post->slug,
-                    '',
-                    '',
-                    '',
-                    $post->body,
-                    $post->thumbnail,
-                    '',
-                    '',
-                )
-            );
-        } */
 
         return view('posts.index', [
             'posts' => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(6)->withQueryString(),
