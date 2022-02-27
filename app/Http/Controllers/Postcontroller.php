@@ -25,19 +25,12 @@ class Postcontroller extends Controller
             $articleCollection->push(
                 new ArticlesData(
                     $article['id'],
-                    '1',
-                    '3',
                     $article['title'],
                     $article['description'],
                     $article['published_timestamp'],
-                    $article['slug'],
                     $article['url'],
-                    $article['public_reactions_count'],
-                    $article['page_views_count'],
-                    $article['body_markdown'],
                     $article['cover_image'],
                     $article['canonical_url'],
-                    $article['reading_time_minutes'],
                 )
             );
         }
@@ -65,7 +58,7 @@ class Postcontroller extends Controller
 
         return view('posts.index', [
             'posts' => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(6)->withQueryString(),
-            /* 'articles' => $articleCollection->sortBy('published_at'), */
+            'articles' => $articleCollection->sortBy('published_at'),
         ]);
     }
 

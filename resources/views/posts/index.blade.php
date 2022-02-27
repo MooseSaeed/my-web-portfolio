@@ -1,10 +1,7 @@
 <x-bloglayout>
 
-    @include('posts.__header')
-
-
     @if ($posts->onFirstPage())
-        <x-DevtoCard :post="$posts[0]" />
+        <x-DevtoCard :articles="$articles" />
     @endif
 
     @if ($posts->count())

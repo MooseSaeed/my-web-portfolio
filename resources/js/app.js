@@ -13,10 +13,10 @@ import Dropdownitems from "./components/categories/Dropdownitems";
 import vClickOutside from "click-outside-vue3";
 import Flashmessage from "./components/Flashmessage";
 import Card from "./components/Card";
-import DevtoCard from "./components/DevtoCard";
 import Switchdark from "./components/darkcomponents/Switchdark";
 import Svglogodark from "./components/darkcomponents/Svglogodark";
 import Svgnewsletterdark from "./components/darkcomponents/Svgnewsletterdark";
+import Swiperslides from "./components/devto/Swiperslides";
 
 createApp({
     components: {
@@ -28,8 +28,26 @@ createApp({
         Switchdark,
         Svglogodark,
         Svgnewsletterdark,
-        DevtoCard,
+        Swiperslides,
     },
 })
     .use(vClickOutside)
     .mount("#app");
+
+import Swiper, { Navigation, Pagination } from "swiper";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+var swiper = new Swiper(".mySwiper", {
+    modules: [Pagination, Navigation],
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

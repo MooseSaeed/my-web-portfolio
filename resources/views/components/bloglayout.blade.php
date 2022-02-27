@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('/cardhover.css') }}" />
     <script src="{{ asset('/js/app.js') }}" defer></script>
     <script src="{{ asset('/darkcookies.js') }}" defer></script>
+
 </head>
 
 {{-- I guess no harm done here
