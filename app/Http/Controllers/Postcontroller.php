@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\DataTransferObjects\ArticlesData;
 use App\Models\Category;
 use App\Models\Post;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
@@ -27,7 +28,7 @@ class Postcontroller extends Controller
                     $article['id'],
                     $article['title'],
                     $article['description'],
-                    $article['published_timestamp'],
+                    Carbon::create($article['published_timestamp']),
                     $article['url'],
                     $article['cover_image'],
                     $article['canonical_url'],

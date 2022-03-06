@@ -10,7 +10,7 @@ class ArticlesData
         public readonly ?int $id,
         public readonly string $title,
         public readonly string $excerpt,
-        public readonly string $created_at,
+        public readonly Carbon $created_at,
         public readonly string $url,
         public readonly string $thumbnail,
         public readonly string $canonical_url,

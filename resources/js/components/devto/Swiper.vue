@@ -7,10 +7,6 @@
         :modules="modules"
         class="mySwiper"
     >
-        <swiper-slide> slide </swiper-slide>
-        <swiper-slide> slide </swiper-slide>
-        <swiper-slide> slide </swiper-slide>
-        <swiper-slide> slide </swiper-slide>
     </swiper>
 </template>
 

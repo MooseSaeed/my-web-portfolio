@@ -18,6 +18,8 @@ import Svglogodark from "./components/darkcomponents/Svglogodark";
 import Svgnewsletterdark from "./components/darkcomponents/Svgnewsletterdark";
 import Swiperslides from "./components/devto/Swiperslides";
 import Swiperslidescontent from "./components/devto/Swiperslidescontent";
+import Swiperslidesitems from "./components/devto/Swiperslidesitems";
+import Swiperimg from "./components/devto/Swiperimg";
 
 createApp({
     components: {
@@ -31,6 +33,8 @@ createApp({
         Svgnewsletterdark,
         Swiperslides,
         Swiperslidescontent,
+        Swiperslidesitems,
+        Swiperimg,
     },
 })
     .use(vClickOutside)
@@ -43,6 +47,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "3",
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 2,
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3,
+        },
+    },
     modules: [Pagination, Navigation],
     pagination: {
         el: ".swiper-pagination",
