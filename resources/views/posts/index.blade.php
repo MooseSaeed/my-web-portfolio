@@ -1,7 +1,9 @@
 <x-bloglayout>
 
-    @if ($posts->onFirstPage())
-        <x-DevtoCard :articles="$articles" />
+    @if ($articles->count() >= 1)
+        @if ($posts->onFirstPage())
+            <x-DevtoCard :articles="$articles" />
+        @endif
     @endif
 
     @if ($posts->count())
