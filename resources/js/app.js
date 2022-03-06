@@ -18,8 +18,11 @@ import Svglogodark from "./components/darkcomponents/Svglogodark";
 import Svgnewsletterdark from "./components/darkcomponents/Svgnewsletterdark";
 import Swiperslides from "./components/devto/Swiperslides";
 import Swiperslidescontent from "./components/devto/Swiperslidescontent";
-import Swiperslidesitems from "./components/devto/Swiperslidesitems";
 import Swiperimg from "./components/devto/Swiperimg";
+import Swiperheader from "./components/devto/Swiperheader";
+import Swiperfooter from "./components/devto/Swiperfooter";
+import Swiperbutton from "./components/devto/Swiperbutton";
+import Swipertitle from "./components/devto/Swipertitle";
 
 createApp({
     components: {
@@ -33,8 +36,11 @@ createApp({
         Svgnewsletterdark,
         Swiperslides,
         Swiperslidescontent,
-        Swiperslidesitems,
         Swiperimg,
+        Swiperheader,
+        Swiperfooter,
+        Swiperbutton,
+        Swipertitle,
     },
 })
     .use(vClickOutside)
@@ -47,19 +53,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "3",
+    slidesPerView: "1",
     // Responsive breakpoints
     breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 1,
-        },
-        // when window width is >= 480px
-        480: {
+        782: {
             slidesPerView: 2,
         },
-        // when window width is >= 640px
-        640: {
+        1024: {
             slidesPerView: 3,
         },
     },

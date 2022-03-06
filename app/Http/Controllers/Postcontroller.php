@@ -3,17 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\DataTransferObjects\ArticlesData;
-use App\Models\Category;
 use App\Models\Post;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
 class Postcontroller extends Controller
 {
-    public function index()
+    public function articles()
     {
-
         $articles = Http::withHeaders([
             'api-key' => config('services.devto.key'),
         ])->get('http://dev.to/api/articles/me/published');
@@ -36,10 +33,14 @@ class Postcontroller extends Controller
             );
         }
 
+        return $articleCollection->sortBy('published_at');
+    }
+    public function index()
+    {
 
         return view('posts.index', [
             'posts' => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(6)->withQueryString(),
-            'articles' => $articleCollection->sortBy('published_at'),
+            'articles' => $this->articles(),
         ]);
     }
 

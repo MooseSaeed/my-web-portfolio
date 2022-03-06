@@ -9,14 +9,31 @@
 
 
     <Swiperslides>
+
         @foreach ($articles as $article)
             <Swiperslidescontent>
-                <Swiperslidesitems title="{{ $article->title }}"
-                    created_at="{{ $article->created_at->toDateString() }}">
+
+
+                <div>
                     <Swiperimg src="{{ $article->thumbnail }}" />
-                </Swiperslidesitems>
+                </div>
+
+                <div>
+                    <Swiperheader created_at="{{ $article->created_at->toDateString() }}">
+                        <Swipertitle target="_blank" title="{{ $article->title }}" href="{{ $article->url }}" />
+                    </Swiperheader>
+                </div>
+
+                <div>
+                    <Swiperfooter>
+                        <Swiperbutton target="_blank" href="{{ $article->url }}" />
+                    </Swiperfooter>
+                </div>
+
+
             </Swiperslidescontent>
         @endforeach
+
     </Swiperslides>
 
 
