@@ -25576,7 +25576,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "swiper-slide flex flex-col justify-between rounded-xl border border-black border-opacity-0 py-6 px-12 text-white transition-colors duration-300 hover:border-opacity-5 dark:text-black dark:hover:bg-blue-50 dark:hover:bg-none"
+  "class": "swiper-slide my-5 flex flex-col justify-between rounded-xl border border-black border-opacity-0 py-6 px-12 text-white transition-colors duration-300 hover:border-opacity-5 dark:text-black dark:hover:bg-blue-50 dark:hover:bg-none"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("article", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]);
