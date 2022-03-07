@@ -62,7 +62,7 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                             bg-gradient-to-r from-purple-600 to-blue-500
                             hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
                            text-white rounded-full ml-1 py-3 px-7 text-sm">
-                        Subscribe for Updates
+                        GET IN TOUCH
                     </button>
                 </a>
             </div>
@@ -106,6 +106,31 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                                 </button>
                             </form>
                         </div>
+                    </div>
+
+                    <div class="mt-10 flex flex-col sd:flex-row gap-5 items-center justify-center">
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center">
+                            <p class="mr-2 mb-2 sm:mb-0">Find me here</p>
+                            <div class="flex flex-row gap-2">
+                                <a href="https://twitter.com/Moose_Said" target="_blank">
+                                    <img class="hover:animate-bounce" width="40" src="/images/twitter.png" alt="Twitter icons created by Hight Quality Icons">
+                                </a>
+                                <a href="https://github.com/MooseSaeed" target="_blank">
+                                    <img class="hover:animate-bounce" width="40" src="/images/github.png" alt="github icons created by Hight Quality Icons">
+                                </a>
+                                <a href="https://dev.to/moose_said" target="_blank">
+                                    <img class="hover:animate-bounce" width="40" src="/images/dev.png" alt="devto icons created by Hight Quality Icons">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center justify-center">
+                            <p class="mr-2">Or just fire an E-Mail</p>
+                            <a href="mailto:mostafasaid1994@gmail.com" target="_blank">
+                                <img class="hover:animate-bounce" width="40" src="/images/email.png" alt="email icons created by Hight Quality Icons">
+                            </a>
+                        </div>
+
                     </div>
                 </footer>
             </div>
