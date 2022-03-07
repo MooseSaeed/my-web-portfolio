@@ -56,8 +56,11 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                 @auth
                     <div
                         class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
+
                         <x-admin-dropdown />
-                        <Dropdown />
+
+                        </ Dropdown>
+
                     </div>
                 @endauth
                 <a href="#newsletter">

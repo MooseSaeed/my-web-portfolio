@@ -5,7 +5,6 @@ use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PostCommentController;
 use App\Http\Controllers\Postcontroller;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
 route::get('/playground', function () {

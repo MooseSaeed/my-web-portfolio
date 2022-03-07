@@ -4,9 +4,11 @@
         @include('posts.__header')
     @endif
 
-    @if ($articles->count() >= 1)
-        @if ($posts->onFirstPage())
-            <x-DevtoCard :articles="$articles" />
+    @if (!request('category'))
+        @if ($articles->count() >= 1)
+            @if ($posts->onFirstPage())
+                <x-DevtoCard :articles="$articles" />
+            @endif
         @endif
     @endif
 
