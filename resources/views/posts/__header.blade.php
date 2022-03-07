@@ -1,6 +1,6 @@
 <header class="max-w-xl mx-auto mt-10 text-center ">
 
-    <h1 class="text-4xl text-white dark:text-black ">
+    <h1 class="sm:text-4xl text-2xl text-white dark:text-black">
         <span class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 px-2 py-1 rounded-xl text-white ">
             Code is Puppet</span>
         blog
@@ -33,10 +33,13 @@
             <form method="GET" action="#" class="">
                 <div class="flex justify-between items-center text-center">
                     @if (request('category'))
-                    <input type="hidden" name="category" value="{{ request('category') }}">
+                        <input type="hidden" name="category" value="{{ request('category') }}">
                     @endif
-                    <input type="text" name="search" placeholder="Looking for something?" value="{{ request('search') }}" class="shadow-none w-full focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
-                    <button type="submit" class="transition-colors duration-300 bg-gradient-to-r hover:to-blue-900 hover:from-blue-500  from-blue-400 to-blue-800 text-white m-1 rounded-xl text-xs font-semibold uppercase py-2 px-6">
+                    <input type="text" name="search" placeholder="Looking for something?"
+                        value="{{ request('search') }}"
+                        class="shadow-none w-full focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
+                    <button type="submit"
+                        class="transition-colors duration-300 bg-gradient-to-r hover:to-blue-900 hover:from-blue-500  from-blue-400 to-blue-800 text-white m-1 rounded-xl text-xs font-semibold uppercase py-2 px-6">
                         Search
                     </button>
 
@@ -44,14 +47,5 @@
             </form>
         </div>
 
-        {{-- <div
-            class="override flex lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl px-3 py-2">
-            <form method="GET" action="#">
-                @if (request('category'))
-                    <input type="hidden" name="category" value="{{ request('category') }}">
-        @endif
-        <input type="text" name="search" placeholder="Looking for something?" value="{{ request('search') }}" class="shadow-none focus:shadow-none bg-transparent placeholder-black text-sm border-none outline-hidden" />
-        </form>
-    </div> --}}
     </div>
 </header>

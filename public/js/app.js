@@ -25391,7 +25391,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
-    "class": "flex cursor-pointer items-center justify-between",
+    "class": "flex cursor-pointer items-center justify-center",
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return $data.store.modeToggle(), $options.modeToggle();
     })

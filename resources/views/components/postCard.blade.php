@@ -11,11 +11,10 @@
                 </h1>
             </a>
 
-            <span class="mt-4 block text-gray-400 text-xs">
-                Published <time>{{ $post->created_at->diffForHumans() }}</time> in <span class="space-x-2">
-                    <a href="/?category={{ $post->category->slug }}" class="ml-1 px-6 py-1 border border-violet-400 rounded-full text-violet-400 text-xs uppercase font-semibold" style="font-size: 10px">{{ $post->category->name }}</a>
-                </span>
-            </span>
+            <div class="mt-4 text-gray-400 text-xs flex items-center">
+                <div>Published {{ $post->created_at->diffForHumans() }} in</div>
+                <a href="/?category={{ $post->category->slug }}" class="ml-1 px-3 sm:px-6 py-1 border border-violet-400 rounded-full text-violet-400 text-sm uppercase font-bold" style="font-size: 10px">{{ $post->category->name }}</a>
+            </div>
 
         </div>
     </header>

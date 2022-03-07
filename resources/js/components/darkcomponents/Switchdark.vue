@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex cursor-pointer items-center justify-between"
+        class="flex cursor-pointer items-center justify-center"
         @click="store.modeToggle(), modeToggle()"
     >
         <div

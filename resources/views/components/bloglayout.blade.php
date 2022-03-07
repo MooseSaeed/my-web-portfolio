@@ -39,14 +39,14 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
     dark:bg-none
     ">
 
-        <nav class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 gap-4 justify-center items-center md:flex md:justify-between md:items-center">
+        <nav class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 gap-4 justify-center md:flex md:justify-between md:items-center">
             <div class="justify-self-center">
                 <a href="/">
                     <Svglogodark />
                 </a>
             </div>
 
-            <div>
+            <div class="flex items-center justify-center">
                 <Switchdark theme="{{ $cookie === 'true' ? 'true' : 'false' }}" />
             </div>
 
@@ -54,7 +54,7 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                 @auth
                 <div class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
                     <x-admin-dropdown />
-                    </Dropdown>
+                    <Dropdown />
                 </div>
                 @endauth
                 <a href="#newsletter">
@@ -83,7 +83,7 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                         <Svgnewsletterdark />
                     </div>
 
-                    <h5 class="text-3xl">Subscribe to my newsletter and stay up to date.</h5>
+                    <h5 class="text-2xl sm:text-3xl">Subscribe to my newsletter and stay up to date.</h5>
                     <p class="text-sm mt-3">Promise to keep the inbox clean. No nonesense.</p>
                     <div id="newsletter" class="mt-10">
                         <div class="relative inline-block mx-auto bg-blue-100 rounded-full">
@@ -101,7 +101,7 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                                 <button href="#newsletter" class="demogardNewsletterbutton transition duration-300 font-semibold
                             bg-gradient-to-r from-purple-600 to-blue-500
                             hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
-                           text-white rounded-full ml-1 py-1 px-6 text-sm">
+                           text-white rounded-full ml-1 py-1 px-6 text-sm mb-2 sm:mb-0">
                                     Subscribe
                                 </button>
                             </form>
