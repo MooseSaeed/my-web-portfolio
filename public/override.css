@@ -96,10 +96,10 @@ select {
     transition: background 1s ease-out !important;
 }
 .demogard:hover {
-    background-position: 126.6px !important;
+    background-position: 128px !important;
 }
 .demogard:focus {
-    background-position: 126.6px !important;
+    background-position: 128px !important;
 }
 
 .demogardPostComment {
@@ -152,7 +152,7 @@ select {
 }
 
 .selectedCategoryItem {
-    background: blue;
+    background: rgb(40, 133, 255);
 }
 
 .swiper-slide {
