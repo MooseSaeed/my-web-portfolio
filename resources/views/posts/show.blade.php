@@ -18,7 +18,7 @@
 
                 <div class="col-span-8 text-white dark:text-black">
 
-                    <div class="hidden lg:flex justify-between mb-6">
+                    <div class="flex justify-between mb-6">
                         <a href="/"
                             class="relative inline-flex items-center text-lg text-transparent bg-clip-text demogard transition duration-300 font-semibold 
                 bg-gradient-to-r from-purple-600 to-blue-500
@@ -37,7 +37,7 @@
                         {{ $post->title }}
                     </h1>
 
-                    <div class="space-y-4 lg:text-lg leading-loose">
+                    <div class="prose prose-white dark:prose-black space-y-4 lg:text-lg leading-loose">
                         {!! $post->body !!}
                     </div>
                 </div>
