@@ -675,11 +675,6 @@ select{
   margin-bottom: -0.5rem;
 }
 
-.mx-1{
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
 .ml-3{
   margin-left: 0.75rem;
 }
@@ -818,6 +813,10 @@ select{
 
 .h-6{
   height: 1.5rem;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .h-3{
@@ -2160,20 +2159,12 @@ select{
 
 @media (min-width: 364px){
 
-  .xs\:mb-2{
-    margin-bottom: 0.5rem;
-  }
-
   .xs\:mb-0{
     margin-bottom: 0px;
   }
 
   .xs\:flex-row{
     flex-direction: row;
-  }
-
-  .xs\:flex-col{
-    flex-direction: column;
   }
 
   .xs\:text-lg{
@@ -2267,11 +2258,6 @@ select{
   .sm\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .sm\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
 
