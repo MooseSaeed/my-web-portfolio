@@ -124,15 +124,15 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                             <p class="mr-2 mb-2 sm:mb-0 text-sm xs:text-lg">Find me here</p>
                             <div class="flex flex-row gap-2">
                                 <a href="https://twitter.com/Moose_Said" target="_blank">
-                                    <img class="hover:animate-bounce" width="40" src="/images/twitter.png"
-                                        alt="Twitter icons created by Hight Quality Icons">
+                                    <img class="transition-transform hover:scale-125" width="40"
+                                        src="/images/twitter.png" alt="Twitter icons created by Hight Quality Icons">
                                 </a>
                                 <a href="https://github.com/MooseSaeed" target="_blank">
-                                    <img class="hover:animate-bounce" width="40" src="/images/github.png"
-                                        alt="github icons created by Hight Quality Icons">
+                                    <img class="transition-transform hover:scale-125" width="40"
+                                        src="/images/github.png" alt="github icons created by Hight Quality Icons">
                                 </a>
                                 <a href="https://dev.to/moose_said" target="_blank">
-                                    <img class="hover:animate-bounce" width="40" src="/images/dev.png"
+                                    <img class="transition-transform hover:scale-125" width="40" src="/images/dev.png"
                                         alt="devto icons created by Hight Quality Icons">
                                 </a>
                             </div>
@@ -140,7 +140,7 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                         <div class="flex xs:flex-row flex-col items-center justify-center">
                             <p class="mr-2 mb-2 xs:mb-0 text-sm xs:text-lg">Or just fire me an E-Mail</p>
                             <a href="mailto:mostafasaid1994@gmail.com" target="_blank">
-                                <img class="hover:animate-bounce" width="40" src="/images/email.png"
+                                <img class="transition-transform hover:scale-125" width="40" src="/images/email.png"
                                     alt="email icons created by Hight Quality Icons">
                             </a>
                         </div>

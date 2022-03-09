@@ -1330,8 +1330,8 @@ select{
   width: 8rem;
 }
 
-.w-72{
-  width: 18rem;
+.w-64{
+  width: 16rem;
 }
 
 .w-12{
@@ -1340,10 +1340,6 @@ select{
 
 .w-3{
   width: 0.75rem;
-}
-
-.w-64{
-  width: 16rem;
 }
 
 .min-w-full{
@@ -2394,41 +2390,6 @@ select{
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@-webkit-keyframes bounce{
-
-  0%, 100%{
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-@keyframes bounce{
-
-  0%, 100%{
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.hover\:animate-bounce:hover{
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
 }
 
 .hover\:border-gray-300:hover{
