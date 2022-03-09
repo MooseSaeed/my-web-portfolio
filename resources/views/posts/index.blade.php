@@ -1,8 +1,8 @@
 <x-bloglayout>
 
-    @if ($posts->onFirstPage())
-        @include('posts.__header')
-    @endif
+
+    @include('posts.__header')
+
 
     @if (!request('category'))
         @if ($articles->count() >= 1)
