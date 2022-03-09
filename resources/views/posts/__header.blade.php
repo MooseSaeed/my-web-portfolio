@@ -1,10 +1,8 @@
 <header class="max-w-xl mx-auto mt-10 text-center ">
 
-    <h1 class="sm:text-4xl text-2xl text-white dark:text-black">
-        <span class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 px-2 py-1 rounded-xl text-white ">
-            Code Puppeteer</span>
-        blog
-    </h1>
+    <section class="flex justify-center items-center">
+        <Bloglogo></Bloglogo>
+    </section>
 
     <h2 class="dark:text-black text-white inline-flex mt-3 items-center">
         By Mostafa Said
@@ -30,7 +28,7 @@
         <!-- Search -->
 
         <div class="override relative lg:inline-flex items-center rounded-xl bg-blue-100">
-            <form method="GET" action="#" class="">
+            <form method="GET" action="#">
                 <div class="flex justify-between items-center text-center">
                     @if (request('category'))
                     <input type="hidden" name="category" value="{{ request('category') }}">

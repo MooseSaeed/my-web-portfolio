@@ -24,6 +24,7 @@ import Swiperfooter from "./components/devto/Swiperfooter";
 import Swiperbutton from "./components/devto/Swiperbutton";
 import Swipertitle from "./components/devto/Swipertitle";
 import Testing from "./components/Testing";
+import Bloglogo from "./components/Bloglogo";
 
 createApp({
     components: {
@@ -43,6 +44,7 @@ createApp({
         Swiperbutton,
         Swipertitle,
         Testing,
+        Bloglogo,
     },
 })
     .use(vClickOutside)
