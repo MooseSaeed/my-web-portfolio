@@ -1,17 +1,5 @@
-<x-bloglayout>
+<x-pLayout>
 
-    <?php
-    
-    $articles = Http::withHeaders([
-        'api-key' => config('services.devto.key'),
-    ])->get('http://dev.to/api/articles/me/published');
-    
-    $articles = json_decode($articles, true);
-    
-    ?>
+    <Testing />
 
-    @foreach ($articles as $article)
-        <h1 class="text-white text-xl">{{ $article['title'] }}</h1>
-    @endforeach
-
-</x-bloglayout>
+</x-pLayout>
