@@ -1,5 +1,5 @@
 <x-pLayout>
 
-    <Testing />
+    <Linkspage />
 
 </x-pLayout>

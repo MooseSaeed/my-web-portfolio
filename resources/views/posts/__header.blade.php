@@ -10,8 +10,6 @@
     </h2>
 
     <p class="text-sm mt-3 text-white dark:text-black">
-        I like to consider code as puppets and we're puppeteers, so join me
-        and learn how to make your code do exactly what you want.
         Here you will find articles and tutorials about web developement
         that will surely help you become a better developer.
     </p>

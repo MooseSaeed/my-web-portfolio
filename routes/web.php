@@ -7,9 +7,9 @@ use App\Http\Controllers\PostCommentController;
 use App\Http\Controllers\Postcontroller;
 use Illuminate\Support\Facades\Route;
 
-route::get('/playground', function () {
+route::get('/links', function () {
 
-    return view('playground');
+    return view('links');
 });
 
 

@@ -41,7 +41,7 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
     ">
 
         <nav
-            class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 gap-4 justify-center md:flex md:justify-between md:items-center">
+            class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 justify-center md:flex md:justify-between md:items-center">
             <div class="justify-self-center">
                 <a href="/">
                     <Svglogodark />
@@ -59,7 +59,7 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
 
                         <x-admin-dropdown />
 
-                        </ Dropdown>
+                        </Dropdown>
 
                     </div>
                 @endauth

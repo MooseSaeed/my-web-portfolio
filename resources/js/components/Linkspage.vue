@@ -13,11 +13,10 @@
             />
             <kinesis-element class="circle circle-purple2" :strength="70" />
             <kinesis-element class="circle circle-purple3" :strength="60" />
-
             <div
                 class="inset-0 flex min-h-screen flex-col items-center justify-center"
             >
-                <div class="flex w-72 items-center justify-center md:w-full">
+                <div class="flex w-64 items-center justify-center md:w-full">
                     <kinesis-element :strength="20">
                         <img src="/images/logoletters/m.png" alt="" />
                     </kinesis-element>
@@ -33,7 +32,7 @@
                     </kinesis-element>
                 </div>
                 <div
-                    class="mt-10 flex flex-col items-center justify-center gap-5 sd:flex-row"
+                    class="mx-5 mt-10 flex flex-col items-center justify-center gap-5 sd:flex-row"
                 >
                     <div
                         class="flex flex-col items-center justify-center sm:flex-row"
@@ -45,7 +44,7 @@
                             >
                                 <img
                                     class="transition-transform hover:scale-125"
-                                    width="40"
+                                    width="70"
                                     src="/images/twitter.png"
                                     alt="Twitter icons created by Hight Quality Icons"
                                 />
@@ -56,7 +55,7 @@
                             >
                                 <img
                                     class="transition-transform hover:scale-125"
-                                    width="40"
+                                    width="70"
                                     src="/images/github.png"
                                     alt="github icons created by Hight Quality Icons"
                                 />
@@ -64,24 +63,33 @@
                             <a href="https://dev.to/moose_said" target="_blank">
                                 <img
                                     class="transition-transform hover:scale-125"
-                                    width="40"
+                                    width="70"
                                     src="/images/dev.png"
                                     alt="devto icons created by Hight Quality Icons"
                                 />
                             </a>
-                            <a
-                                href="mailto:mostafasaid1994@gmail.com"
-                                target="_blank"
-                            >
+                            <a href="/" target="_blank">
                                 <img
                                     class="transition-transform hover:scale-125"
-                                    width="40"
-                                    src="/images/email.png"
-                                    alt="email icons created by Hight Quality Icons"
+                                    width="70"
+                                    src="/images/blogbadge.png"
+                                    alt="isaidcode blog badge"
                                 />
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="mt-5 flex flex-row items-center justify-center">
+                    <p class="mr-5 text-white">Fire me an E-Mail</p>
+
+                    <a href="mailto:mostafasaid1994@gmail.com" target="_blank">
+                        <img
+                            class="transition-transform hover:scale-125"
+                            width="70"
+                            src="/images/email.png"
+                            alt="email icons created by Hight Quality Icons"
+                        />
+                    </a>
                 </div>
             </div>
         </main>

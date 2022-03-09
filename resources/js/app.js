@@ -23,7 +23,7 @@ import Swiperheader from "./components/devto/Swiperheader";
 import Swiperfooter from "./components/devto/Swiperfooter";
 import Swiperbutton from "./components/devto/Swiperbutton";
 import Swipertitle from "./components/devto/Swipertitle";
-import Testing from "./components/Testing";
+import Linkspage from "./components/Linkspage";
 import Bloglogo from "./components/Bloglogo";
 
 createApp({
@@ -43,7 +43,7 @@ createApp({
         Swiperfooter,
         Swiperbutton,
         Swipertitle,
-        Testing,
+        Linkspage,
         Bloglogo,
     },
 })
