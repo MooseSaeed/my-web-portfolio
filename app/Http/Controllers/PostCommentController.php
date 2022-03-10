@@ -9,17 +9,16 @@ class PostCommentController extends Controller
 {
     public static function store(Post $post)
     {
-
         request()->validate([
-            'body' => 'required',
+            'body' => 'required|min:10|max:200',
             'name' => 'required',
-            'email' => 'required'
+            'email' => 'required',
         ]);
 
         $post->comments()->create([
             'body' => request('body'),
             'name' => request('name'),
-            'email' => request('email')
+            'email' => request('email'),
         ]);
 
         return back()->with('success', 'Your comment has been posted to the world');

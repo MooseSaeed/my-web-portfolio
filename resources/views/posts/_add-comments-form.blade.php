@@ -10,13 +10,13 @@
             <textarea name="body" class="rounded-xl w-full text-sm outline-none border-none" rows="5" placeholder="Think of something to say" value="{{ old('body') }}" required></textarea>
 
             @error('body')
-            <span class="text-xs text-red-500">{{ $message }}</span>
+            <span class="text-xs text-red-500 mb-1">{{ $message }}</span>
             @enderror
 
             <input class="rounded-xl w-full text-sm outline-none border-none" type="text" name="name" placeholder="Name:*" value="{{ old('name') }}" required>
 
             @error('name')
-            <span class="text-xs text-red-500">{{ $message }}</span>
+            <span class="text-xs text-red-500 mb-1">{{ $message }}</span>
             @enderror
 
             <input class="rounded-xl mt-1 w-full text-sm outline-none border-none" type="email" name="email" placeholder="Email:*" value="{{ old('email') }}" required>

@@ -12,7 +12,6 @@ route::get('/links', function () {
     return view('links');
 });
 
-
 /* Showing homepage and posts */
 
 Route::get('/', [Postcontroller::class, 'index'])->name('home');

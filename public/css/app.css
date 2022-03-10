@@ -1745,10 +1745,6 @@ select{
   background-color: transparent;
 }
 
-.bg-blue-50\/30{
-  background-color: rgb(239 246 255 / 0.3);
-}
-
 .bg-blue-500{
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -2606,6 +2602,10 @@ select{
 .dark .dark\:bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-blue-50\/30{
+  background-color: rgb(239 246 255 / 0.3);
 }
 
 .dark .dark\:bg-white{
