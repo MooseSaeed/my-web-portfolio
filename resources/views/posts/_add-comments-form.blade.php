@@ -2,7 +2,7 @@
         @csrf
 
         <header class="flex items-center text-white">
-            <img src="https://i.pravatar.cc/60?u={{ $post->id }}" width="40" height="40" class="rounded-full" alt="">
+            <img src="/images/avatar.png" class="rounded-xl" alt="">
             <h2 class="ml-4">Want to say something?</h2>
         </header>
 
