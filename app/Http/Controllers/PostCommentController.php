@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -22,5 +23,12 @@ class PostCommentController extends Controller
         ]);
 
         return back()->with('success', 'Your comment has been posted to the world');
+    }
+
+    public static function destroy(Comment $comment)
+    {
+        $comment->delete();
+
+        return back()->with('success', 'Comment Deleted!');
     }
 }

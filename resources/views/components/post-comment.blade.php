@@ -18,6 +18,16 @@
             {{ $comment->body }}
         </p>
 
+        @auth
+
+            <form action="/posts/{{ $comment->id }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button class="text-red-500 hover:text-red-600">DELETE</button>
+            </form>
+
+        @endauth
+
     </div>
 
 </article>

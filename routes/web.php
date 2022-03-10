@@ -20,6 +20,7 @@ Route::get('posts/{post:slug}', [Postcontroller::class, 'show']);
 /* Adding Comments */
 
 Route::post('posts/{post:slug}/comments', [PostCommentController::class, 'store']);
+Route::delete('posts/{comment:id}', [PostCommentController::class, 'destroy'])->middleware('admin');
 
 /* Subscribe to Newsletter */
 
