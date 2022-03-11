@@ -1,14 +1,14 @@
 @props(['articles'])
 
-<article
-    class="post-card text-white dark:hover:bg-blue-50 dark:hover:bg-none dark:text-black transition-all duration-1000 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl py-15  my-15">
+<div data-aos-duration="1200" data-aos="fade-up">
+    <article class="post-card text-white dark:hover:bg-blue-50 dark:hover:bg-none dark:text-black transition-all duration-1000 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl py-15  my-15">
 
-    <h1 class="text-3xl font-bold text-center my-5">
-        Latest Articles on Dev.to
-    </h1>
+        <h1 class="text-3xl font-bold text-center my-5">
+            Latest Articles on Dev.to
+        </h1>
 
-    <Swiperslides>
-        @foreach ($articles as $article)
+        <Swiperslides>
+            @foreach ($articles as $article)
             <Swiperslidescontent>
 
 
@@ -30,8 +30,9 @@
 
 
             </Swiperslidescontent>
-        @endforeach
-    </Swiperslides>
+            @endforeach
+        </Swiperslides>
 
 
-</article>
+    </article>
+</div>

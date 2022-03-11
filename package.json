@@ -26,6 +26,7 @@
         "vue-loader": "^17.0.0"
     },
     "dependencies": {
+        "aos": "^3.0.0-beta.6",
         "click-outside-vue3": "^4.0.1",
         "swiper": "^8.0.6",
         "vue": "^3.2.29",

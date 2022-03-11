@@ -4,25 +4,35 @@
             event="scroll"
             class="flex flex-row items-center justify-center self-center justify-self-center"
         >
-            <kinesis-element
-                class="self-start"
-                :transformOrigin="center"
-                :originY="66"
-                :strength="-120"
+            <div
+                data-aos-delay="50"
+                data-aos-duration="400"
+                class="mr-1 self-start"
+                data-aos="zoom-out-down"
             >
-                <img src="/images/iblog.png" alt="" />
-            </kinesis-element>
+                <kinesis-element :originY="35" :strength="60">
+                    <img src="/images/iblog.png" alt="" />
+                </kinesis-element>
+            </div>
 
-            <div><img src="/images/isaidcodenoi.png" alt="" /></div>
-
-            <kinesis-element
-                class="self-end"
-                type="translate"
-                :originY="65"
-                :strength="120"
+            <div
+                data-aos-duration="800"
+                data-aos="zoom-in-up"
+                data-aos-anchor-placement="bottom-bottom"
             >
-                <img src="/images/exblog.png" alt="" />
-            </kinesis-element>
+                <img src="/images/isaidcodenoi.png" alt="" />
+            </div>
+
+            <div
+                data-aos-delay="300"
+                data-aos-duration="500"
+                class="ml-1 self-end"
+                data-aos="zoom-in-left"
+            >
+                <kinesis-element :originY="35" :strength="-60">
+                    <img src="/images/exblog.png" alt="" />
+                </kinesis-element>
+            </div>
         </kinesis-container>
     </div>
 </template>

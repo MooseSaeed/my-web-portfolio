@@ -77,3 +77,7 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+import "aos/dist/aos.css";
+import AOS from "aos";
+AOS.init();
