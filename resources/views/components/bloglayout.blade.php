@@ -31,7 +31,8 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
 
 {{-- Echo dark or echo nothing to prevent flash of incorrect theme --}}
 
-<body id="app" style="font-family: Open Sans, sans-serif" class="scroll-smooth {{ $cookie === 'false' ? '' : 'dark' }}">
+<body id="app" style="font-family: Open Sans, sans-serif"
+    class="scroll-smooth {{ $cookie === 'false' ? '' : 'dark' }}">
 
     <div class="
     bg-option6
@@ -39,7 +40,8 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
     dark:bg-none
     ">
 
-        <nav class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 justify-center md:flex md:justify-between md:items-center">
+        <nav
+            class="bg-option7 dark:bg-white dark:bg-none grid grid-rows-2 py-3 px-10 justify-center md:flex md:justify-between md:items-center">
             <div class="justify-self-center">
                 <a href="/">
                     <Svglogodark />
@@ -52,16 +54,18 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
 
             <div class="flex flex-col gap-2 md:block items-center justify-center">
                 @auth
-                <div class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
+                    <div
+                        class="override relative lg:inline-flex items-center bg-gradient-to-br from-green-200 to-blue-300 rounded-xl">
 
-                    <x-admin-dropdown />
+                        <x-admin-dropdown />
 
-                    </Dropdown>
+                        </Dropdown>
 
-                </div>
+                    </div>
                 @endauth
                 <a href="#newsletter">
-                    <button href="#newsletter" class="demogardNewsletter transition duration-300 font-semibold
+                    <button href="#newsletter"
+                        class="demogardNewsletter transition duration-300 font-semibold
                             bg-gradient-to-r from-purple-600 to-blue-500
                             hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
                            text-white rounded-full ml-1 py-3 px-7 text-sm">
@@ -75,12 +79,13 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
 
         <section class="px-6 pb-6 pt-2">
 
-            <main class="max-w-6xl mx-auto mt-6 lg:mt-10 space-y-6">
+            <main v-cloak class="max-w-6xl mx-auto mt-6 lg:mt-10 space-y-6">
 
                 {{ $slot }}
             </main>
             <div class="p-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 rounded-xl mt-16">
-                <footer class="text-white dark:text-black flex flex-col justify-center items-center bg-option7 dark:bg-none dark:bg-white text-center py-16 px-10 rounded-xl">
+                <footer
+                    class="text-white dark:text-black flex flex-col justify-center items-center bg-option7 dark:bg-none dark:bg-white text-center py-16 px-10 rounded-xl">
 
                     <div>
                         <Svgnewsletterdark />
@@ -96,12 +101,14 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                                     <label for="email" class="inline-block">
                                         <img src="/images/mailbox-icon.svg" alt="mailbox letter" />
                                     </label>
-                                    <input id="email" name="email" type="text" placeholder="Your email address" class="bg-transparent text-center sm:text-left py-1 pl-3 md:py-2 md:pl-4 focus-within:outline-none outline-none border-none" />
+                                    <input id="email" name="email" type="text" placeholder="Your email address"
+                                        class="bg-transparent text-center sm:text-left py-1 pl-3 md:py-2 md:pl-4 focus-within:outline-none outline-none border-none" />
                                     @error('email')
-                                    <span class="text-xs text-red-500">{{ $message }}</span>
+                                        <span class="text-xs text-red-500">{{ $message }}</span>
                                     @enderror
                                 </div>
-                                <button href="#newsletter" class="demogardNewsletterbutton transition duration-300 font-semibold
+                                <button href="#newsletter"
+                                    class="demogardNewsletterbutton transition duration-300 font-semibold
                             bg-gradient-to-r from-purple-600 to-blue-500
                             hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
                            text-white rounded-full ml-1 py-1 px-6 text-sm mb-2 sm:mb-0">
@@ -117,20 +124,24 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
                             <p class="mr-2 mb-2 sm:mb-0 text-sm xs:text-lg">Find me here</p>
                             <div class="flex flex-row gap-2">
                                 <a href="https://twitter.com/Moose_Said" target="_blank">
-                                    <img class="transition-transform hover:scale-125" width="40" src="/images/twitter.png" alt="Twitter icons created by Hight Quality Icons">
+                                    <img class="transition-transform hover:scale-125" width="40"
+                                        src="/images/twitter.png" alt="Twitter icons created by Hight Quality Icons">
                                 </a>
                                 <a href="https://github.com/MooseSaeed" target="_blank">
-                                    <img class="transition-transform hover:scale-125" width="40" src="/images/github.png" alt="github icons created by Hight Quality Icons">
+                                    <img class="transition-transform hover:scale-125" width="40"
+                                        src="/images/github.png" alt="github icons created by Hight Quality Icons">
                                 </a>
                                 <a href="https://dev.to/moose_said" target="_blank">
-                                    <img class="transition-transform hover:scale-125" width="40" src="/images/dev.png" alt="devto icons created by Hight Quality Icons">
+                                    <img class="transition-transform hover:scale-125" width="40" src="/images/dev.png"
+                                        alt="devto icons created by Hight Quality Icons">
                                 </a>
                             </div>
                         </div>
                         <div class="flex xs:flex-row flex-col items-center justify-center">
                             <p class="mr-2 mb-2 xs:mb-0 text-sm xs:text-lg">Or just fire me an E-Mail</p>
                             <a href="mailto:mostafasaid1994@gmail.com" target="_blank">
-                                <img class="transition-transform hover:scale-125" width="40" src="/images/email.png" alt="email icons created by Hight Quality Icons">
+                                <img class="transition-transform hover:scale-125" width="40" src="/images/email.png"
+                                    alt="email icons created by Hight Quality Icons">
                             </a>
                         </div>
 
@@ -141,7 +152,7 @@ $cookie = $_COOKIE['isDarkModeOn'] ?? '';
     </div>
 
     @if (session()->has('success'))
-    <Flashmessage message="{{ session('success') }}" />
+        <Flashmessage message="{{ session('success') }}" />
     @endif
 
 </body>

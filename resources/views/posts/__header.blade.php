@@ -14,7 +14,7 @@
         that will surely help you become a better developer.
     </p>
 
-    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" data-aos-mirror="true" class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">
 
         <!--  Category -->
         <div class="override relative lg:inline-flex items-center rounded-xl bg-blue-100">
