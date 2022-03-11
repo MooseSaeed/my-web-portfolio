@@ -7,7 +7,7 @@
             <kinesis-element
                 class="self-start"
                 :transformOrigin="center"
-                :originY="63"
+                :originY="66"
                 :strength="-120"
             >
                 <img src="/images/iblog.png" alt="" />
@@ -18,7 +18,7 @@
             <kinesis-element
                 class="self-end"
                 type="translate"
-                :originY="60"
+                :originY="65"
                 :strength="120"
             >
                 <img src="/images/exblog.png" alt="" />

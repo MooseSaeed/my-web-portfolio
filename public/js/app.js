@@ -25220,7 +25220,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_kinesis_element, {
         "class": "self-start",
         transformOrigin: _ctx.center,
-        originY: 63,
+        originY: 66,
         strength: -120
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -25234,7 +25234,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       , ["transformOrigin"]), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_kinesis_element, {
         "class": "self-end",
         type: "translate",
-        originY: 60,
+        originY: 65,
         strength: 120
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
