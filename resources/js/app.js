@@ -1,11 +1,3 @@
-require("./bootstrap");
-
-import Alpine from "alpinejs";
-
-window.Alpine = Alpine;
-
-Alpine.start();
-
 import { createApp } from "vue";
 import Dropdown from "./components/categories/Dropdown";
 import Dropdowncontent from "./components/categories/Dropdowncontent";
@@ -50,6 +42,10 @@ createApp({
     .use(vClickOutside)
     .mount("#app");
 
+import "aos/dist/aos.css";
+import AOS from "aos";
+AOS.init();
+
 import Swiper, { Navigation, Pagination } from "swiper";
 // import Swiper and modules styles
 import "swiper/css";
@@ -77,7 +73,3 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
-
-import "aos/dist/aos.css";
-import AOS from "aos";
-AOS.init();

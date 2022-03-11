@@ -1170,6 +1170,10 @@ select{
   margin-top: -1px;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -1208,10 +1212,6 @@ select{
 
 .mr-1{
   margin-right: 0.25rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
 }
 
 .mr-5{
