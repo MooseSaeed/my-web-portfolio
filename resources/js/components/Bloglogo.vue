@@ -9,8 +9,9 @@
                 data-aos-duration="400"
                 class="mr-1 self-start"
                 data-aos="zoom-out-down"
+                data-aos-mirror="false"
             >
-                <kinesis-element :originY="35" :strength="60">
+                <kinesis-element :originY="25" :strength="60">
                     <img src="/images/iblog.png" alt="" />
                 </kinesis-element>
             </div>
@@ -18,7 +19,7 @@
             <div
                 data-aos-duration="800"
                 data-aos="zoom-in-up"
-                data-aos-anchor-placement="bottom-bottom"
+                data-aos-mirror="true"
             >
                 <img src="/images/isaidcodenoi.png" alt="" />
             </div>
@@ -28,6 +29,7 @@
                 data-aos-duration="500"
                 class="ml-1 self-end"
                 data-aos="zoom-in-left"
+                data-aos-mirror="false"
             >
                 <kinesis-element :originY="35" :strength="-60">
                     <img src="/images/exblog.png" alt="" />

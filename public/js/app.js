@@ -25200,7 +25200,8 @@ var _hoisted_2 = {
   "data-aos-delay": "50",
   "data-aos-duration": "400",
   "class": "mr-1 self-start",
-  "data-aos": "zoom-out-down"
+  "data-aos": "zoom-out-down",
+  "data-aos-mirror": "false"
 };
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
@@ -25213,7 +25214,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "data-aos-duration": "800",
   "data-aos": "zoom-in-up",
-  "data-aos-anchor-placement": "bottom-bottom"
+  "data-aos-mirror": "true"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   src: "/images/isaidcodenoi.png",
   alt: ""
@@ -25225,7 +25226,8 @@ var _hoisted_5 = {
   "data-aos-delay": "300",
   "data-aos-duration": "500",
   "class": "ml-1 self-end",
-  "data-aos": "zoom-in-left"
+  "data-aos": "zoom-in-left",
+  "data-aos-mirror": "false"
 };
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
@@ -25246,7 +25248,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_kinesis_element, {
-        originY: 35,
+        originY: 25,
         strength: 60
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
