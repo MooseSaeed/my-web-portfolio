@@ -2,32 +2,46 @@
     <kinesis-container class="relative overflow-hidden">
         <main class="bg-port">
             <kinesis-element
+                data-aos="fade-right"
                 class="circle circle-purple"
                 :strength="50"
                 axis="x"
             />
             <kinesis-element
+                data-aos="fade-up"
                 class="circle circle-purple1"
                 :strength="80"
                 axis="y"
             />
-            <kinesis-element class="circle circle-purple2" :strength="70" />
-            <kinesis-element class="circle circle-purple3" :strength="60" />
+            <kinesis-element
+                data-aos="fade-down"
+                class="circle circle-purple2"
+                :strength="70"
+            />
+            <kinesis-element
+                data-aos="fade-right"
+                class="circle circle-purple3"
+                :strength="60"
+            />
             <div
                 class="inset-0 flex min-h-screen flex-col items-center justify-center"
             >
                 <div class="flex w-64 items-center justify-center md:w-full">
-                    <kinesis-element :strength="20">
+                    <kinesis-element data-aos="zoom-out-down" :strength="20">
                         <img src="/images/logoletters/m.png" alt="" />
                     </kinesis-element>
-                    <kinesis-element class="self-end" :strength="25">
+                    <kinesis-element
+                        data-aos="fade-right"
+                        class="self-end"
+                        :strength="25"
+                    >
                         <img
                             class=""
                             src="/images/logoletters/dot.png"
                             alt=""
                         />
                     </kinesis-element>
-                    <kinesis-element :strength="30">
+                    <kinesis-element data-aos="zoom-out-up" :strength="30">
                         <img src="/images/logoletters/said.png" alt="" />
                     </kinesis-element>
                 </div>
@@ -123,7 +137,7 @@ export default {
 
 .circle.circle-purple {
     border: 10px solid #f2eafa;
-    opacity: 0.1;
+    opacity: 0.1 !important;
     width: 4vw;
     height: 4vw;
     left: 10%;
@@ -132,7 +146,7 @@ export default {
 
 .circle.circle-purple1 {
     border: 15px solid #f2eafa;
-    opacity: 0.1;
+    opacity: 0.1 !important;
     width: 8vw;
     height: 8vw;
     right: -2%;
@@ -140,7 +154,7 @@ export default {
 }
 .circle.circle-purple2 {
     background-color: #f2eafa;
-    opacity: 0.1;
+    opacity: 0.1 !important;
     width: 5vw;
     height: 5vw;
     left: 20%;
@@ -149,7 +163,7 @@ export default {
 
 .circle.circle-purple3 {
     border: 15px solid #f2eafa;
-    opacity: 0.3;
+    opacity: 0.3 !important;
     width: 3vw;
     height: 3vw;
     top: 80%;

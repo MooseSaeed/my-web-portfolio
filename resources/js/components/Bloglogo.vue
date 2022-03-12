@@ -9,7 +9,6 @@
                 data-aos-duration="400"
                 class="mr-1 self-start"
                 data-aos="zoom-out-down"
-                data-aos-mirror="false"
             >
                 <kinesis-element :originY="25" :strength="60">
                     <img src="/images/iblog.png" alt="" />
@@ -29,7 +28,6 @@
                 data-aos-duration="500"
                 class="ml-1 self-end"
                 data-aos="zoom-in-left"
-                data-aos-mirror="false"
             >
                 <kinesis-element :originY="35" :strength="-60">
                     <img src="/images/exblog.png" alt="" />
