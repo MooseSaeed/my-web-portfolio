@@ -3,7 +3,7 @@
 <article class="flex text-white dark:text-black dark:bg-blue-50/30 p-6 rounded-xl border border-blue-100 space-x-4">
 
     <div class="flex-shrink-0 ">
-        <img src="/images/avatar.png" class="rounded-full" alt="">
+        <img src="/images/avatar.png" class="rounded-full" alt="User avatar">
     </div>
 
     <div>
