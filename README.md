@@ -12,9 +12,14 @@
 ## Demo
 
 ![Blog Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g6ic3eom0snhvgmuqy6j.gif)
-![Blog Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ae2fq0o4jwbuypltt7dh.gif)
-![Blog Header](https://media.giphy.com/media/PJobkttQjyORpDNtyh/giphy-downsized-large.gif)
-![Blog Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ig9muj3vaz4fm9abfy38.gif)
+
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ae2fq0o4jwbuypltt7dh.gif" />
+
+![Swiper Devto Blog]()
+
+![Cool Card Effects](https://media.giphy.com/media/PJobkttQjyORpDNtyh/giphy-downsized-large.gif)
+
+![End blog](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ig9muj3vaz4fm9abfy38.gif)
 
 ## Author
 
