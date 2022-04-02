@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to iSaidCode! 👋</h1>
 <p>
-  <a href="https://twitter.com/Moose\_Said" target="_blank">
-    <img alt="Twitter: Moose\_Said" src="https://img.shields.io/twitter/follow/Moose\_Said.svg?style=social" />
+  <a href="https://twitter.com/Moose_Said" target="_blank">
+    <img alt="Twitter: Moose_Said" src="https://img.shields.io/twitter/follow/Moose\_Said.svg?style=social" />
   </a>
 </p>
 
@@ -12,12 +12,9 @@
 ## Demo
 
 ![Blog Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g6ic3eom0snhvgmuqy6j.gif)
-
-![Swiper Devto Blog](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ae2fq0o4jwbuypltt7dh.gif)
-
-![Cool Card Effects](https://media.giphy.com/media/PJobkttQjyORpDNtyh/giphy-downsized-large.gif)
-
-![End blog](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ig9muj3vaz4fm9abfy38.gif)
+![Blog Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ae2fq0o4jwbuypltt7dh.gif)
+![Blog Header](https://media.giphy.com/media/PJobkttQjyORpDNtyh/giphy-downsized-large.gif)
+![Blog Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ig9muj3vaz4fm9abfy38.gif)
 
 ## Author
 
