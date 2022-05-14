@@ -13,9 +13,7 @@
 
 ![Blog Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g6ic3eom0snhvgmuqy6j.gif)
 
-<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ae2fq0o4jwbuypltt7dh.gif" />
-
-![Swiper Devto Blog]()
+![Swiper Devto Blog](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ae2fq0o4jwbuypltt7dh.gif)
 
 ![Cool Card Effects](https://media.giphy.com/media/PJobkttQjyORpDNtyh/giphy-downsized-large.gif)
 
